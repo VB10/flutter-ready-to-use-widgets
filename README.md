@@ -8,8 +8,8 @@
 
 # Container
 
-| Name               | Video(Gif or Image)                                               |
-| ------------------ | ----------------------------------------------------------------- |
-| Gradient Container | [github/images/gradient_container.png][gradient container sample] |
+| Name               | Video(Gif or Image)                                     |
+| ------------------ | ------------------------------------------------------- |
+| Gradient Container | [Image](github/images/container/gradient_container.png) |
 
 ## Feature Widget
