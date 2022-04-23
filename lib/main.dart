@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/atomic/alert_dialog/custom_alert_dialog.dart';
 
 import 'atomic/button/custom_elevated_button.dart';
 import 'atomic/container/gradient_container.dart';
@@ -28,14 +29,19 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               const SearchAbleDropdownWithPagintedRequestExample(),
-
               CustomElevatedButton(
-                color: Colors.red,
-                height: 50,
-                width: 200,
-                borderRadius: 20,
-                onPressed: () {},
-                child: const Text("Custom Button")),
+                  color: Colors.red,
+                  height: 50,
+                  width: 200,
+                  borderRadius: 20,
+                  onPressed: () {
+                    showAlertDialog(context,
+                        title: "Custom Show Alert",
+                        content: "Fena Widget",
+                        defaultActionText: "Tabi Efendim",
+                        onPressed: () {});
+                  },
+                  child: const Text("Custom Button")),
             ],
           ),
         ),
