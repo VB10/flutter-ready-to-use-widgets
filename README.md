@@ -13,5 +13,6 @@
 | Gradient Container | [Image](github/images/container/gradient_container.png) |
 | Searchable Dropdown With Paginated Request | [Gif](github/gifs/dropdown/searchable_dropdown_with_paginated_request.gif) |
 | Custom Elevated Button | [Image](github/images/button/custom_button.png) |
+| Custom Alert Widget | [Image](github/images/alert_dialog/custom_alert.png) |
 
 ## Feature Widget
