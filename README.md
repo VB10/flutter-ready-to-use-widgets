@@ -20,3 +20,9 @@
 | Custom DropDown                            | [Gif](https://media.giphy.com/media/CwhvwmZLDtrW5St1wN/giphy.gif)          |
 
 ## Feature Widget
+
+| Network Dependent Widget| any child
+
+Internet bağlantısına göre child widget ı gösterir yada gizler. Internet kesildiğinde istenierse custom mesaj ile  ikaz gösterir. 
+
+Shows child widget according to netwrok status. If provided shows error message for network disable.
