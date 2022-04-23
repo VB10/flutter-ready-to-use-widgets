@@ -12,5 +12,6 @@
 | ------------------ | ------------------------------------------------------- |
 | Gradient Container | [Image](github/images/container/gradient_container.png) |
 | Searchable Dropdown With Paginated Request | [Gif](github/gifs/dropdown/searchable_dropdown_with_paginated_request.gif) |
+| Custom DropDown    | [Gif](https://media.giphy.com/media/CwhvwmZLDtrW5St1wN/giphy.gif) |
 
 ## Feature Widget
