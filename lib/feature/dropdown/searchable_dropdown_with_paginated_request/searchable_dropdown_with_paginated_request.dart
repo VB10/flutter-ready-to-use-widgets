@@ -19,21 +19,35 @@ extension CustomGlobalKeyExtension on GlobalKey {
 
 class SearchAbleDropdownWithPaginatedRequest extends StatefulWidget {
   ///Seçilen itemı döndürür
+  ///
+  ///Returns selected Item
   final Function(BaseModel selectedItem)? onItemSelected;
 
   ///İçeriği dolduracak get request servisi
+  ///
+  ///Paginated request service which is fill the dropdown
   final Future Function(int page, String? key) getRequest;
 
   ///Gelen modelin gösterilecek textinin toJson'daki adı
+  ///
+  ///Each Dropdown item's textfield fills with this field.
+  ///
+  ///You must give a field name used in your model's toJson method
   final String nameField;
 
   ///Dropdown boş iken gözükecek olan text
+  ///
+  ///Hint text shown when the dropdown is empty
   final String? hintText;
 
   ///Drop downun üzerinde yazar
+  ///
+  ///Drop downs label name which is appears above the dropdown
   final String? label;
 
   ///Eğer dropdown'ın doldurulması zorunlu ise labelın yanına * işareti atar
+  ///
+  ///If requered is true adds '*' key to end of label
   final bool isRequired;
 
   ///Başa icon atar
@@ -43,6 +57,8 @@ class SearchAbleDropdownWithPaginatedRequest extends StatefulWidget {
   final TextStyle? style;
 
   ///Drop down widgetın maximum büyüklüğü, default: MediaQuery.of(context).size.height*0.3
+  ///
+  ///Height of dropdown's dialog, default: MediaQuery.of(context).size.height*0.3
   final double? dropDownMaxHeight;
   const SearchAbleDropdownWithPaginatedRequest(
       {Key? key,
@@ -145,6 +161,7 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
     double? dialogPossitionFromBottom = possitionFromBottom != null ? possitionFromBottom - alertDialogMaxHeight : null;
     if (dialogPossitionFromBottom != null) {
       //Dialog ekrana sığmıyor ise reverseler
+      //If dialog couldn't fit the screen, reverse it
       if (dialogPossitionFromBottom <= 0) {
         isReversed = true;
         dialogPossitionFromBottom +=
@@ -155,12 +172,14 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
     }
     controller.getRequest(page: 1, isNewSearch: true);
     //Hesaplamaları yaptıktan sonra dialogu göster
+    //Show the dialog
     showDialog(
       context: context,
       builder: (context) {
         double? reCalculatePosition = dialogPossitionFromBottom;
         double keyboardHeight = MediaQuery.of(context).viewInsets.bottom;
         //Keyboard varsa digalogu ofsetler
+        //If keyboard pushes the dialog, recalculate the dialog's possition.
         if (reCalculatePosition != null && reCalculatePosition <= keyboardHeight) {
           reCalculatePosition = (keyboardHeight - reCalculatePosition) + reCalculatePosition;
         }
