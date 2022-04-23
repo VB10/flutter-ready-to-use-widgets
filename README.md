@@ -11,5 +11,8 @@
 | Name               | Video(Gif or Image)                                     |
 | ------------------ | ------------------------------------------------------- |
 | Gradient Container | [Image](github/images/container/gradient_container.png) |
+| SizedBox Empty     |
 
 ## Feature Widget
+
+Internet Dependent Widget eklendi. Projede internet bağımlı bir widget var ise child olarak atanıp internet olamdığında boş kutu gösterilir. Örneğin sayfa update eden bir refresh icon. Ayrıca SizedBoxEmpty atomic olarak eklendi. Eğer
