@@ -1,4 +1,4 @@
-## Kendi özel widget çözümümü nasıl paylaşırım?
+## Kendi özel widget çözümümü nasıl paylaşırım? (🇹🇷)
 
 Paylaşmadan önce alttaki kuralları uygulayıp, pr attıktan sonrasında merge alınarak dahil edilecektir.
 
@@ -11,7 +11,7 @@ Paylaşmadan önce alttaki kuralları uygulayıp, pr attıktan sonrasında merge
 
 (Resim, video ve gif gibi eklemeler github/video şeklinde eklenir ve adı widget ile aynı olmak zorundadır)
 
-## How can share my custom widget to thi repo?
+## How can share my custom widget to thi repo? (🇺🇸)
 
 - If your solitons is atomic, you need to add solution into the atomic folder.
 - - For instance: lib/atomic/containter/animated_visible_container.dart . Of course you can use same usage.
