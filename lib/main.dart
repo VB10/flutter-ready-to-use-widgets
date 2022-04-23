@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'atomic/button/custom_elevated_button.dart';
 import 'atomic/container/gradient_container.dart';
 import 'feature/dropdown/searchable_dropdown_with_paginated_request/example/example.dart';
 
@@ -27,6 +28,14 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               const SearchAbleDropdownWithPagintedRequestExample(),
+
+              CustomElevatedButton(
+                color: Colors.red,
+                height: 50,
+                width: 200,
+                borderRadius: 20,
+                onPressed: () {},
+                child: const Text("Custom Button")),
             ],
           ),
         ),
