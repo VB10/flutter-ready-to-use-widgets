@@ -12,5 +12,8 @@
 | ------------------ | ------------------------------------------------------- |
 | Gradient Container | [Image](github/images/container/gradient_container.png) |
 | Searchable Dropdown With Paginated Request | [Gif](github/gifs/dropdown/searchable_dropdown_with_paginated_request.gif) |
+| SizedBoxEmpty      | EmptySizedBoxForDisplay                                  |
 
 ## Feature Widget
+Internet Dependent Widget
+|nternet dependent widget added. This widget uses internet connection checker and bloc to show its child. If internet is disconnected child becomes EmptySizedBox. This can be used with refresh functionality
