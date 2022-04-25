@@ -1,6 +1,6 @@
 # BaseChart
 
-Bu grafik yapısı ile verdiğiniz _.csv_ dosyalarındaki verilerle grafik çizimini kolaylaştırıyor.
+Bu grafik yapısı ile verdiğiniz _.csv_ dosyalarındaki verilerle grafik çizimini kolaylaştırıyor. Daha detaylı anlattığım makalesine [buradan](https://burakimdat.medium.com/fluttera-csv-dosyas%C4%B1ndaki-veriyle-grafik-%C3%A7izme-e3fdc7fd4f0) ulaşabilirsiniz
 
 ## Çalışma Mantığı
 
