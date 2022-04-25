@@ -20,3 +20,9 @@
 | Custom DropDown                            | [Gif](https://media.giphy.com/media/CwhvwmZLDtrW5St1wN/giphy.gif)          |
 
 ## Feature Widget
+
+# Chart
+
+| Name               | Readme                                                  |
+| ------------------ | ------------------------------------------------------- |
+| CSV Chart | [Readme](https://github.com/burakJs/flutter-ready-to-use-widgets/blob/master/lib/feature/chart/Readme.md) |
