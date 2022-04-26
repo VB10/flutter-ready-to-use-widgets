@@ -31,3 +31,9 @@
 
 
 ## Feature Widget
+
+# Chart
+
+| Name               | Readme                                                  |
+| ------------------ | ------------------------------------------------------- |
+| CSV Chart | [Readme](https://github.com/burakJs/flutter-ready-to-use-widgets/blob/master/lib/feature/chart/Readme.md) |

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'atomic/container/gradient_container.dart';
-import 'atomic/dropdown/example_custom_dropdown.dart';
-import 'feature/dropdown/searchable_dropdown_with_paginated_request/example/example.dart';
+import 'package:ready_to_use_widgets/feature/chart/example/example_chart_view.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,7 +8,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Material App', home: ExampleCustomDropdown());
-
+    return const MaterialApp(title: 'Material App', home: ExampleChartView());
   }
 }
