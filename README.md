@@ -11,6 +11,7 @@
 | Name               | Video(Gif or Image)                                     |
 | ------------------ | ------------------------------------------------------- |
 | Gradient Container | [Image](github/images/container/gradient_container.png) |
+| Animated Scale Container | [Image](github/gifs/container/animated_scale_wrapper.gif) |
 
 # Dropdown
 
