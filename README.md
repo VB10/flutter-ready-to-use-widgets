@@ -21,10 +21,12 @@
 
 # Button
 | Name               | Video(Gif or Image)                                 |
+| ------------------ | ----------------------------------------------------|
 | Custom Elevated Button | [Image](github/images/button/custom_button.png) |
 
 # Alert Dialog
 | Name               | Video(Gif or Image)                                   |
+| ------------------ | ------------------------------------------------------|
 | Custom Alert Widget | [Image](github/images/alert_dialog/custom_alert.png) |
 
 
