@@ -17,12 +17,17 @@
 | Name                                       | Video(Gif or Image)                                                        |
 | ------------------------------------------ | -------------------------------------------------------------------------- |
 | Searchable Dropdown With Paginated Request | [Gif](github/gifs/dropdown/searchable_dropdown_with_paginated_request.gif) |
-| Custom DropDown                            | [Gif](https://media.giphy.com/media/CwhvwmZLDtrW5St1wN/giphy.gif)          |
 
-# DateTime
 
-| Name                                       | Video(Gif or Image)                                                        |
-| ------------------------------------------ | -------------------------------------------------------------------------- |
-| Hour Selector | [Gif](github/gifs/datetime/hour_selector.gif)                                                           |
+# Button
+| Name               | Video(Gif or Image)                                 |
+| ------------------ | ----------------------------------------------------|
+| Custom Elevated Button | [Image](github/images/button/custom_button.png) |
+
+# Alert Dialog
+| Name               | Video(Gif or Image)                                   |
+| ------------------ | ------------------------------------------------------|
+| Custom Alert Widget | [Image](github/images/alert_dialog/custom_alert.png) |
+
 
 ## Feature Widget
