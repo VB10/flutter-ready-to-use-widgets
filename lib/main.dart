@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ready_to_use_widgets/atomic/alert_dialog/custom_alert_dialog.dart';
-
-import 'atomic/button/custom_elevated_button.dart';
 import 'atomic/container/gradient_container.dart';
+import 'atomic/dropdown/example_custom_dropdown.dart';
 import 'feature/dropdown/searchable_dropdown_with_paginated_request/example/example.dart';
 
 void main() => runApp(const MyApp());
@@ -12,40 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              GradientContainer(
-                context: context,
-                child: const SizedBox(
-                  height: 200,
-                  width: 100,
-                ),
-              ),
-              const SearchAbleDropdownWithPagintedRequestExample(),
-              CustomElevatedButton(
-                  color: Colors.red,
-                  height: 50,
-                  width: 200,
-                  borderRadius: 20,
-                  onPressed: () {
-                    showAlertDialog(context,
-                        title: "Custom Show Alert",
-                        content: "Fena Widget",
-                        defaultActionText: "Tabi Efendim",
-                        onPressed: () {});
-                  },
-                  child: const Text("Custom Button")),
-            ],
-          ),
-        ),
-      ),
-    );
+    return MaterialApp(title: 'Material App', home: ExampleCustomDropdown());
+
   }
 }
