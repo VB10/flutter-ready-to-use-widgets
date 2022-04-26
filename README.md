@@ -17,12 +17,25 @@
 | Name                                       | Video(Gif or Image)                                                        |
 | ------------------------------------------ | -------------------------------------------------------------------------- |
 | Searchable Dropdown With Paginated Request | [Gif](github/gifs/dropdown/searchable_dropdown_with_paginated_request.gif) |
-| Custom DropDown                            | [Gif](https://media.giphy.com/media/CwhvwmZLDtrW5St1wN/giphy.gif)          |
+
+
+# Button
+| Name               | Video(Gif or Image)                                 |
+| ------------------ | ----------------------------------------------------|
+| Custom Elevated Button | [Image](github/images/button/custom_button.png) |
+
+# Alert Dialog
+| Name               | Video(Gif or Image)                                   |
+| ------------------ | ------------------------------------------------------|
+| Custom Alert Widget | [Image](github/images/alert_dialog/custom_alert.png) |
+
 
 ## Feature Widget
+=======
+# Chart
 
-| Network Dependent Widget| any child
+| Name               | Readme                                                  |
+| ------------------ | ------------------------------------------------------- |
+| CSV Chart | [Readme](https://github.com/burakJs/flutter-ready-to-use-widgets/blob/master/lib/feature/chart/Readme.md) |
+| Network Dependent Widget| https://media.giphy.com/media/GswIOmdIVG0uKbVKF6/giphy.gif |
 
-Internet bağlantısına göre child widget ı gösterir yada gizler. Internet kesildiğinde istenierse custom mesaj ile  ikaz gösterir. 
-
-Shows child widget according to netwrok status. If provided shows error message for network disable.
