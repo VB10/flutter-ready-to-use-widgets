@@ -30,6 +30,13 @@
 | Custom Alert Widget | [Image](github/images/alert_dialog/custom_alert.png) |
 
 
+
+# ToolBar
+    
+| Name                                       | Video(Gif or Image)                                                        |
+| ------------------------------------------ | -------------------------------------------------------------------------- |
+| Dynamic Cool ToolBar | [Gif](github/gifs/toolbar/dynamic_cool_tool_bar.gif)                                                           |
+
 ## Feature Widget
 =======
 # Chart
