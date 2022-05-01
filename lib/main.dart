@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'atomic/button/asynchronous_button.dart';
 import 'atomic/dropdown/example_custom_dropdown.dart';
 import 'feature/network_connection/cubit/network_cubit.dart';
-
-void main() => runApp(const AppBlocProvider());
-
 import 'package:ready_to_use_widgets/feature/chart/example/example_chart_view.dart';
 
+void main() => runApp(const AppBlocProvider());
 
 class AppBlocProvider extends StatelessWidget {
   const AppBlocProvider({Key? key}) : super(key: key);
@@ -34,8 +33,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return const MaterialApp(title: 'Material App', home: ExampleChartView());
-
   }
 }
