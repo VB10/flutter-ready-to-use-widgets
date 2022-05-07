@@ -5,16 +5,11 @@ Cache extent parametresinin ekran genişliğinde olmasıyla performans sıkınt�
 ## Çalışma Mantığı
 
 WidgetSlider(
-            slideAxis: ,
-            slideCount: ,
-            slidingSpeed: ,
-            spacing: ,
-            children: []
-          ),
+  slideAxis: , --> Axis.horizontal || Axis.vertical
+  slideCount: , -->  1 || 100 || 1000000000 istediğiniz kadar max int değerini aşmadığı sürece problem yaşamadan çalıştırabilirsiniz.
+  slidingSpeed: , --> Slider'ın her 100ms de alacağı mesafe default olarak 10 değerindedir. Daha smooth geçişler için küçük değerler tavsiye edilir
+  spacing: , --> Child'lar arasında ki mesafe
+  children: <Widget>[] --> widget türünden nesneler. 
+  ),
 
 
-
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/70351342/165073783-a63f2b0d-5f28-49bb-a1f3-40eeb310046e.png" width="207" height="448">
-  <img src="https://user-images.githubusercontent.com/70351342/165073894-52fef303-bbb2-4e58-b1dc-4dfeb3522fc9.png" width="109" height="448">
-</p>
