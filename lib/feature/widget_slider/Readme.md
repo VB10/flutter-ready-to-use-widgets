@@ -13,3 +13,4 @@ WidgetSlider(
   ),<br>
 
 
+![Ekran Kaydı 2022-05-07 16 14 27](https://user-images.githubusercontent.com/89414084/167256940-56d7d4ed-6fed-49e5-a265-954e58050981.gif)
