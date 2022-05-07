@@ -24,6 +24,10 @@
 | Name               | Video(Gif or Image)                                 |
 | ------------------ | ----------------------------------------------------|
 | Custom Elevated Button | [Image](github/images/button/custom_button.png) |
+| Circle Navigator Button | [Screenshot_1651920779](https://user-images.githubusercontent.com/101670417/167251306-c0250e76-a76d-4b1f-be62-51343cc79526.png)|
+
+
+
 
 # Alert Dialog
 | Name               | Video(Gif or Image)                                   |
@@ -48,11 +52,5 @@
 | Network Dependent Widget| https://media.giphy.com/media/GswIOmdIVG0uKbVKF6/giphy.gif |
 
 
-
-# Circle Navigator Button
-| Name               | Video(Gif or Image)                                 |
-| ------------------ | ----------------------------------------------------|
-| Circle Navigator Button | ![Screenshot_1651920779](https://user-images.githubusercontent.com/101670417/167251306-c0250e76-a76d-4b1f-be62-51343cc79526.png)
- |
 
 
