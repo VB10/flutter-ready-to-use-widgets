@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:ready_to_use_widgets/feature/slider/slider.dart';
 
-class SliderExample extends StatefulWidget {
-  const SliderExample({Key? key}) : super(key: key);
+import '../widget_slider.dart';
+
+class WidgetSliderExample extends StatefulWidget {
+  const WidgetSliderExample({Key? key}) : super(key: key);
 
   @override
-  State<SliderExample> createState() => _SliderExampleState();
+  State<WidgetSliderExample> createState() => _WidgetSliderExampleState();
 }
 
-class _SliderExampleState extends State<SliderExample> {
+class _WidgetSliderExampleState extends State<WidgetSliderExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
