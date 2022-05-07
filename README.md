@@ -47,3 +47,10 @@
 | CSV Chart | [Readme](https://github.com/burakJs/flutter-ready-to-use-widgets/blob/master/lib/feature/chart/Readme.md) |
 | Network Dependent Widget| https://media.giphy.com/media/GswIOmdIVG0uKbVKF6/giphy.gif |
 
+# Widget Slider
+
+| Name               | Readme                                                  |
+| ------------------ | ------------------------------------------------------- |
+| WidgetSlider | [Readme](https://github.com/MehmetKaranlik/flutter-ready-to-use-widgets/blob/master/lib/feature/widget_slider/Readme.md) |
+
+
