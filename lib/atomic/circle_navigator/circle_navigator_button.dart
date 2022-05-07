@@ -2,7 +2,7 @@
 *With this widget, we perform page redirection with pleasant and colorful balls.
 *[TR] Bu widget ile sayfa yönlendirme işlemlerini keyifli ve renkli toplarla gerçekleştiriyoruz.*/
 
-circleNavigator(
+Widget circleNavigatorButton(
     {required String text,
     required IconData icon,
     required Color color,
