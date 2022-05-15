@@ -19,17 +19,19 @@
 | ------------------------------------------ | -------------------------------------------------------------------------- |
 | Searchable Dropdown With Paginated Request | [Gif](github/gifs/dropdown/searchable_dropdown_with_paginated_request.gif) |
 
-
 # Button
-| Name               | Video(Gif or Image)                                 |
-| ------------------ | ----------------------------------------------------|
-| Custom Elevated Button | [Image](github/images/button/custom_button.png) |
+
+| Name                   | Video(Gif or Image)                                  |
+| ---------------------- | ---------------------------------------------------- |
+| Custom Elevated Button | [Image](github/images/button/custom_button.png)      |
+| ------------------     | ---------------------------------------------------- |
+| AsynchronousButton     | [Gif](github/gifs/button/asynchronous_button.gif)    |
 
 # Alert Dialog
-| Name               | Video(Gif or Image)                                   |
-| ------------------ | ------------------------------------------------------|
-| Custom Alert Widget | [Image](github/images/alert_dialog/custom_alert.png) |
 
+| Name                | Video(Gif or Image)                                  |
+| ------------------- | ---------------------------------------------------- |
+| Custom Alert Widget | [Image](github/images/alert_dialog/custom_alert.png) |
 
 
 # ToolBar
@@ -39,18 +41,15 @@
 | Dynamic Cool ToolBar | [Gif](github/gifs/toolbar/dynamic_cool_tool_bar.gif)                                                           |
 
 ## Feature Widget
-=======
-# Chart
 
-| Name               | Readme                                                  |
-| ------------------ | ------------------------------------------------------- |
-| CSV Chart | [Readme](https://github.com/burakJs/flutter-ready-to-use-widgets/blob/master/lib/feature/chart/Readme.md) |
-| Network Dependent Widget| https://media.giphy.com/media/GswIOmdIVG0uKbVKF6/giphy.gif |
+=======
+
+# Chart
 
 # Widget Slider
 
 | Name               | Readme                                                  |
 | ------------------ | ------------------------------------------------------- |
 | WidgetSlider | [Readme](https://github.com/MehmetKaranlik/flutter-ready-to-use-widgets/blob/master/lib/feature/widget_slider/Readme.md) |
-
-
+| CSV Chart                | [Readme](https://github.com/burakJs/flutter-ready-to-use-widgets/blob/master/lib/feature/chart/Readme.md) |
+| Network Dependent Widget | https://media.giphy.com/media/GswIOmdIVG0uKbVKF6/giphy.gif                                                |
