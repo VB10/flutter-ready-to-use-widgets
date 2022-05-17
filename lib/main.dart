@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'package:ready_to_use_widgets/atomic/circular_progress/loading_circular_progress.dart';
 import 'atomic/button/asynchronous_button.dart';
 import 'atomic/dropdown/example_custom_dropdown.dart';
 import 'feature/network_connection/cubit/network_cubit.dart';
@@ -28,11 +29,42 @@ class AppBlocProvider extends StatelessWidget {
   }
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  int _counter = 0;
+
+  void _incrementCounter() async {
+    for (var x = 0; x < 10; x++) {
+      await Future.delayed(const Duration(seconds: 1));
+      setState(() {
+        _counter++;
+      });
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _incrementCounter();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: 'Material App', home: ExampleChartView());
+    return Scaffold(
+      body: Center(
+        child: LoadingCircular(
+            isLoading: _counter * 10 == 100 ? true : false,
+            color: _counter * 10 == 100 ? Colors.green : Colors.blueAccent,
+            progress: _counter / 10,
+            width: 100,
+            height: 100),
+      ),
+    );
   }
 }
