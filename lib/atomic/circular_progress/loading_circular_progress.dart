@@ -39,3 +39,30 @@ class LoadingCircular extends StatelessWidget {
     );
   }
 }
+
+
+
+/* 
+
+
+HOW TO USE ? 
+
+- void _incrementCounter() async {
+    for (var x = 0; x < 10; x++) {
+      await Future.delayed(const Duration(seconds: 1));
+      setState(() {
+        _counter++;
+      });
+    }
+  }
+
+  you need to define your func for loading. 
+  after this you can call button or initstate for page loading. 
+LoadingCircular(
+            isLoading: _counter * 10 == 100 ? true : false,
+            color: _counter * 10 == 100 ? Colors.green : Colors.blueAccent,
+            progress: _counter / 10,
+            width: 100,
+            height: 100),
+
+            */
