@@ -33,6 +33,13 @@
 | ------------------- | ---------------------------------------------------- |
 | Custom Alert Widget | [Image](github/images/alert_dialog/custom_alert.png) |
 
+# Custom Text Field
+
+| Name                | Video(Gif or Image)                                  |
+| ------------------- | ---------------------------------------------------- |
+| Custom Text Field   | [Image](github/images/custom_text_field/custom_text_field.PNG) |
+
+
 
 # ToolBar
     
