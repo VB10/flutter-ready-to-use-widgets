@@ -8,9 +8,9 @@
 
 # Container
 
-| Name               | Video(Gif or Image)                                     |
-| ------------------ | ------------------------------------------------------- |
-| Gradient Container | [Image](github/images/container/gradient_container.png) |
+| Name                     | Video(Gif or Image)                                       |
+| ------------------------ | --------------------------------------------------------- |
+| Gradient Container       | [Image](github/images/container/gradient_container.png)   |
 | Animated Scale Container | [Image](github/gifs/container/animated_scale_wrapper.gif) |
 
 # Dropdown
@@ -33,12 +33,53 @@
 | ------------------- | ---------------------------------------------------- |
 | Custom Alert Widget | [Image](github/images/alert_dialog/custom_alert.png) |
 
+# Custom Text Field
+
+| Name                | Video(Gif or Image)                                  |
+| ------------------- | ---------------------------------------------------- |
+| Custom Text Field   | [Image](github/images/custom_text_field/custom_text_field.PNG) |
+
+
 
 # ToolBar
-    
+
+| Name                 | Video(Gif or Image)                                  |
+| -------------------- | ---------------------------------------------------- |
+| Dynamic Cool ToolBar | [Gif](github/gifs/toolbar/dynamic_cool_tool_bar.gif) |
+
+# Checkbox
+
+| Name                      | Video(Gif or Image)                                                         |
+| ------------------------- | --------------------------------------------------------------------------- |
+| 1- Generic Group Checkbox | [Gif](github/gifs/group_checkbox/group_checkbox.gif)                        |
+| ------------------------- | ----------------------------------------------------                        |
+| 2- Generic Group Checkbox | [Image](github/images/group_checkbox/flutter_group_checkbox_properties.png) |
+
+# Divider
+
 | Name                                       | Video(Gif or Image)                                                        |
 | ------------------------------------------ | -------------------------------------------------------------------------- |
-| Dynamic Cool ToolBar | [Gif](github/gifs/toolbar/dynamic_cool_tool_bar.gif)                                                           |
+| Custom Text Divider | [Gif](github/gifs/divider/custom_text_divider.gif) 
+
+
+# Scrollbar
+
+| Name                                       | Video(Gif or Image)                                                        |
+| ------------------------------------------ | -------------------------------------------------------------------------- |
+| Custom Scrollbar | [Gif](github/gifs/scrollbar/custom_scrollbar.gif) 
+
+
+# TextField
+
+| Name                                       | Video(Gif or Image)                                                        |
+| ------------------------------------------ | -------------------------------------------------------------------------- |
+| Custom Password Field | [Gif](github/gifs/textfield/custom_password_field.gif) 
+
+# SnackBar
+
+| Name                                       | Video(Gif or Image)                                                        |
+| ------------------------------------------ | -------------------------------------------------------------------------- |
+| Custom Snackbar | [Gif](github/gifs/snackbar/custom_snackbar.gif) 
 
 ## Feature Widget
 
@@ -46,7 +87,17 @@
 
 # Chart
 
-| Name                     | Readme                                                                                                    |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- |
+# Widget Slider
+
+| Name               | Readme                                                  |
+| ------------------ | ------------------------------------------------------- |
+| WidgetSlider | [Readme](https://github.com/MehmetKaranlik/flutter-ready-to-use-widgets/blob/master/lib/feature/widget_slider/Readme.md) |
 | CSV Chart                | [Readme](https://github.com/burakJs/flutter-ready-to-use-widgets/blob/master/lib/feature/chart/Readme.md) |
 | Network Dependent Widget | https://media.giphy.com/media/GswIOmdIVG0uKbVKF6/giphy.gif                                                |
+
+# Bottom List Picker
+
+| Name                     | Readme                                                                                                    |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| Bottom List Picker                | [Readme](lib/feature/bottomlistpicker/readme.md)  | 
+[Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif) 
