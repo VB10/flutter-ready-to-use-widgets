@@ -73,13 +73,20 @@
 
 | Name                                       | Video(Gif or Image)                                                        |
 | ------------------------------------------ | -------------------------------------------------------------------------- |
-| Custom Password Field | [Gif](github/gifs/textfield/custom_password_field.gif) 
+| Custom Password Field | [Gif](github/gifs/textfield/custom_password_field.gif)
 
 # SnackBar
 
 | Name                                       | Video(Gif or Image)                                                        |
 | ------------------------------------------ | -------------------------------------------------------------------------- |
 | Custom Snackbar | [Gif](github/gifs/snackbar/custom_snackbar.gif) 
+
+# Image
+
+| Name                                       | Video(Gif or Image)                                                        |
+| ------------------------------------------ | -------------------------------------------------------------------------- |
+| Glow Image | [Gif](github/gifs/image/glow_image.gif)                                                           |
+
 
 ## Feature Widget
 
