@@ -2,5 +2,6 @@
     "workbench.colorCustomizations": {
         "titleBar.activeBackground": "#21481E",
         "titleBar.activeForeground": "#F7FBF7"
-    }
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/windows"
 }
