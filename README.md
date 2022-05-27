@@ -74,7 +74,7 @@
 | Name                                 | Video(Gif or Image)                                      |
 | ------------------------------------ | -------------------------------------------------------- |
 | Custom Password Field                | [Gif](github/gifs/textfield/custom_password_field.gif)   |
-| Custom Text Field (beauty_textfield) | [Gif](github\gifs\beauty_textfield\beauty_textfield.gif) |
+| Custom Text Field (beauty_textfield) | [Gif](github/gifs/beauty_textfield/beauty_textfield.gif) |
 
 # SnackBar
 
