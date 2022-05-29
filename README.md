@@ -13,6 +13,13 @@
 | Gradient Container       | [Image](github/images/container/gradient_container.png)   |
 | Animated Scale Container | [Image](github/gifs/container/animated_scale_wrapper.gif) |
 
+# Circular Progress
+
+| Name               | Video(Gif or Image)                                     |
+| ------------------ | ------------------------------------------------------- |
+| Loading Circular | [Gif](github/images/circular_progress/loading_circular.gif) |
+
+
 # Dropdown
 
 | Name                                       | Video(Gif or Image)                                                        |
