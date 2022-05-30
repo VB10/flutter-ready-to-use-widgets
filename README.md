@@ -103,16 +103,11 @@
 
 # ToolBar
 
-<table>
-  <tr>
-    <td> Dynamic Cool ToolBar </td>
-  </tr>
-  
-  <tr>
-    <td><img src="github/gifs/toolbar/dynamic_cool_tool_bar.gif" width=270 height=480></td>
-  </tr>
-  
-</table>
+
+| Name                     | Readme                                                                                                    |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| Dynamic Cool ToolBar      | [Readme](github/gifs/toolbar/dynamic_cool_tool_bar.gif)  | 
+
 
 
 # Checkbox
@@ -133,29 +128,40 @@
 
 # Divider
 
-| Name                                       | Video(Gif or Image)                                                        |
-| ------------------------------------------ | -------------------------------------------------------------------------- |
-| Custom Text Divider | [Gif](github/gifs/divider/custom_text_divider.gif) 
+
+| Name                     | Readme                                                                                                    |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| Custom Text Divider      | [Readme](github/gifs/divider/custom_text_divider.gif)  | 
+
+
 
 
 # Scrollbar
 
-| Name                                       | Video(Gif or Image)                                                        |
-| ------------------------------------------ | -------------------------------------------------------------------------- |
-| Custom Scrollbar | [Gif](github/gifs/scrollbar/custom_scrollbar.gif) 
+
+| Name                     | Readme                                                                                                    |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| Custom Scrollbar         | [Readme](github/gifs/scrollbar/custom_scrollbar.gif)  | 
+
+
 
 
 # TextField
 
-| Name                                       | Video(Gif or Image)                                                        |
-| ------------------------------------------ | -------------------------------------------------------------------------- |
-| Custom Password Field | [Gif](github/gifs/textfield/custom_password_field.gif) 
+
+
+| Name                     | Readme                                                                                                    |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| Custom Password Field                | [Readme](github/gifs/textfield/custom_password_field.gif)  | 
+
 
 # SnackBar
 
-| Name                                       | Video(Gif or Image)                                                        |
-| ------------------------------------------ | -------------------------------------------------------------------------- |
-| Custom Snackbar | [Gif](github/gifs/snackbar/custom_snackbar.gif) 
+
+| Name                     | Readme                                                                                                    |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| Custom Snackbar                | [Readme](github/gifs/snackbar/custom_snackbar.gif)  | 
+
 
 ## Feature Widget
 
@@ -165,15 +171,31 @@
 
 # Widget Slider
 
-| Name               | Readme                                                  |
-| ------------------ | ------------------------------------------------------- |
-| WidgetSlider | [Readme](https://github.com/MehmetKaranlik/flutter-ready-to-use-widgets/blob/master/lib/feature/widget_slider/Readme.md) |
-| CSV Chart                | [Readme](https://github.com/burakJs/flutter-ready-to-use-widgets/blob/master/lib/feature/chart/Readme.md) |
-| Network Dependent Widget | https://media.giphy.com/media/GswIOmdIVG0uKbVKF6/giphy.gif                                                |
+| Name                     | Readme                                                                                                    |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| WidgetSlider             | [Readme](https://github.com/MehmetKaranlik/flutter-ready-to-use-widgets/blob/master/lib/feature/widget_slider/Readme.md)  | 
+| CSV Chart.               | [Readme](https://github.com/burakJs/flutter-ready-to-use-widgets/blob/master/lib/feature/chart/Readme.md)  | 
+
+
+
+<table>
+  <tr>
+     <td> Network Dependent Widget</td>
+  </tr>
+  
+  <tr>
+      <td><img src="https://media.giphy.com/media/GswIOmdIVG0uKbVKF6/giphy.gif" width=270 height=480 </td> 
+  </tr>
+  
+</table>
+
+                                  
 
 # Bottom List Picker
+
 
 | Name                     | Readme                                                                                                    |
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
 | Bottom List Picker                | [Readme](lib/feature/bottomlistpicker/readme.md)  | 
-[Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif) 
+| Bottom List Picker                | [Readme](github/gifs/bottomlistpicker/bottom_list_picker.gif)  | 
+
