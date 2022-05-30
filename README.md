@@ -8,59 +8,128 @@
 
 # Container
 
-| Name                     | Video(Gif or Image)                                       |
-| ------------------------ | --------------------------------------------------------- |
-| Gradient Container       | [Image](github/images/container/gradient_container.png)   |
-| Animated Scale Container | [Image](github/gifs/container/animated_scale_wrapper.gif) |
+<table>
+  <tr>
+    <td>Gradient Container</td>
+    <td>Animated Scale Container</td> 
+  </tr>
+  
+  <tr>
+    <td><img src="github/images/container/gradient_container.png" width=270 height=480></td>
+    <td><img src="github/gifs/container/animated_scale_wrapper.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
 
 # Circular Progress
 
-| Name               | Video(Gif or Image)                                     |
-| ------------------ | ------------------------------------------------------- |
-| Loading Circular | [Gif](github/images/circular_progress/loading_circular.gif) |
+<table>
+  <tr>
+    <td>Loading Circular</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/images/circular_progress/loading_circular.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
 
 
 # Dropdown
 
-| Name                                       | Video(Gif or Image)                                                        |
-| ------------------------------------------ | -------------------------------------------------------------------------- |
-| Searchable Dropdown With Paginated Request | [Gif](github/gifs/dropdown/searchable_dropdown_with_paginated_request.gif) |
+
+<table>
+  <tr>
+    <td>Searchable Dropdown With Paginated Request</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/dropdown/searchable_dropdown_with_paginated_request.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
+
 
 # Button
 
-| Name                   | Video(Gif or Image)                                  |
-| ---------------------- | ---------------------------------------------------- |
-| Custom Elevated Button | [Image](github/images/button/custom_button.png)      |
-| ------------------     | ---------------------------------------------------- |
-| AsynchronousButton     | [Gif](github/gifs/button/asynchronous_button.gif)    |
+
+
+<table>
+  <tr>
+    <td>Custom Elevated Button</td>
+    <td>AsynchronousButton </td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/images/button/custom_button.png" width=270 height=480></td>
+    <td><img src="github/gifs/button/asynchronous_button.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
+
 
 # Alert Dialog
 
-| Name                | Video(Gif or Image)                                  |
-| ------------------- | ---------------------------------------------------- |
-| Custom Alert Widget | [Image](github/images/alert_dialog/custom_alert.png) |
+
+
+<table>
+  <tr>
+    <td>Custom Alert Widget</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/images/alert_dialog/custom_alert.png" width=270 height=480></td>
+  </tr>
+  
+</table>
+
 
 # Custom Text Field
 
-| Name                | Video(Gif or Image)                                  |
-| ------------------- | ---------------------------------------------------- |
-| Custom Text Field   | [Image](github/images/custom_text_field/custom_text_field.PNG) |
+
+<table>
+  <tr>
+    <td> Custom Text Field </td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/images/custom_text_field/custom_text_field.PNG" width=270 height=480></td>
+  </tr>
+  
+</table>
+
 
 
 
 # ToolBar
 
-| Name                 | Video(Gif or Image)                                  |
-| -------------------- | ---------------------------------------------------- |
-| Dynamic Cool ToolBar | [Gif](github/gifs/toolbar/dynamic_cool_tool_bar.gif) |
+<table>
+  <tr>
+    <td> Dynamic Cool ToolBar </td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/toolbar/dynamic_cool_tool_bar.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
+
 
 # Checkbox
 
-| Name                      | Video(Gif or Image)                                                         |
-| ------------------------- | --------------------------------------------------------------------------- |
-| 1- Generic Group Checkbox | [Gif](github/gifs/group_checkbox/group_checkbox.gif)                        |
-| ------------------------- | ----------------------------------------------------                        |
-| 2- Generic Group Checkbox | [Image](github/images/group_checkbox/flutter_group_checkbox_properties.png) |
+<table>
+  <tr>
+    <td> Generic Group Checkbox </td>
+    <td> Generic Group Checkbox </td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/group_checkbox/group_checkbox.gif" width=270 height=480></td>
+     <td><img src="github/images/group_checkbox/flutter_group_checkbox_properties.png" width=270 height=480></td>
+  </tr>
+  
+</table>
+
 
 # Divider
 
