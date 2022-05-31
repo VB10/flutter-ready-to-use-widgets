@@ -13,6 +13,13 @@
 | Gradient Container       | [Image](github/images/container/gradient_container.png)   |
 | Animated Scale Container | [Image](github/gifs/container/animated_scale_wrapper.gif) |
 
+# Circular Progress
+
+| Name               | Video(Gif or Image)                                     |
+| ------------------ | ------------------------------------------------------- |
+| Loading Circular | [Gif](github/images/circular_progress/loading_circular.gif) |
+
+
 # Dropdown
 
 | Name                                       | Video(Gif or Image)                                                        |
@@ -73,13 +80,20 @@
 
 | Name                                       | Video(Gif or Image)                                                        |
 | ------------------------------------------ | -------------------------------------------------------------------------- |
-| Custom Password Field | [Gif](github/gifs/textfield/custom_password_field.gif) 
+| Custom Password Field | [Gif](github/gifs/textfield/custom_password_field.gif)
 
 # SnackBar
 
 | Name                                       | Video(Gif or Image)                                                        |
 | ------------------------------------------ | -------------------------------------------------------------------------- |
 | Custom Snackbar | [Gif](github/gifs/snackbar/custom_snackbar.gif) 
+
+# Image
+
+| Name                                       | Video(Gif or Image)                                                        |
+| ------------------------------------------ | -------------------------------------------------------------------------- |
+| Glow Image | [Gif](github/gifs/image/glow_image.gif)                                                           |
+
 
 ## Feature Widget
 
