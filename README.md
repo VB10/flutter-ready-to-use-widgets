@@ -116,3 +116,14 @@
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
 | Bottom List Picker                | [Readme](lib/feature/bottomlistpicker/readme.md)  | 
 [Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif) 
+
+
+## List of core scripts
+
+# Json Localizator
+
+| Name                     | Readme                                                  |
+| ------------------------ | --------------------------------------------------------|
+| JsonLocalizator          | [Image](https://github.com/desxz/json_localizator/blob/main/assets/image/terminal.PNG)         |
+|                          | [Readme](https://github.com/desxz/json_localizator/blob/main/README.md)        |
+|                          | [GIF](https://github.com/desxz/json_localizator/blob/main/assets/image/json_localizator.gif)        |
