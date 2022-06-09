@@ -101,3 +101,11 @@
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
 | Bottom List Picker                | [Readme](lib/feature/bottomlistpicker/readme.md)  | 
 [Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif) 
+
+
+# Circle Avatar Image And Alphabet
+
+| Name                     | Readme                                                                                                    |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| Circle Avatar Image And Alphabet                | [Readme](lib/feature/circle_avatar_image_and_alphabet/readme.md)  | 
+[Gif](github/gifs/circle_avatar_image_and_alphabet/circle_avatar_image_and_alphabet.gif) 
