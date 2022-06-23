@@ -25,8 +25,30 @@ class AppBlocProvider extends StatelessWidget {
   }
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  int _counter = 0;
+
+  void _incrementCounter() async {
+    for (var x = 0; x < 10; x++) {
+      await Future.delayed(const Duration(seconds: 1));
+      setState(() {
+        _counter++;
+      });
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _incrementCounter();
+  }
 
   @override
   Widget build(BuildContext context) {
