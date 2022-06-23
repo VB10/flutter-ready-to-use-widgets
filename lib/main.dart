@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:ready_to_use_widgets/atomic/glow_image/example_glow_image.dart';
 
-import 'feature/face_pile/example.dart';
 import 'feature/network_connection/cubit/network_cubit.dart';
 
 void main() => runApp(const AppBlocProvider());
@@ -23,7 +22,7 @@ class AppBlocProvider extends StatelessWidget {
               InternetConnectionChecker(), //Internet durumunu burada tüm uygulama kullanımı için servis ediyoruz. Kullandığımız paket ayarları gerekli görülürse değiştirilebilir.
         ), //Network status monitored and serviced to app
       ),
-    ], child: const FacePileExample());
+    ], child: const MyApp());
   }
 }
 
