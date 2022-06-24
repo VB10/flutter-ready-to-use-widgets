@@ -59,15 +59,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Material App',
-        home: Scaffold(
-            appBar: AppBar(title: const Text("Rating Bar")),
-            body: RatingBar(
-              ratingBarIcon: RatingBarIcon.heart,
-              onPressed: (index) {
-                print(index);
-              },
-            )) /*ExampleGlowImage()*/);
+    return MaterialApp(title: 'Material App', home: ExampleGlowImage());
   }
 }
