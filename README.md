@@ -207,3 +207,17 @@
 [Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif) 
 | Bottom List Picker                | [Readme](github/gifs/bottomlistpicker/bottom_list_picker.gif)  | 
 
+
+
+# Stacked Images Widget
+
+<table>
+  <tr>
+    <td>Stacked Images</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github\images\stacked_images\stackedimg.png" width=270 height=480></td>
+  </tr>
+  
+</table>
