@@ -1,8 +1,8 @@
 # Ready to use widgets
 
-(🇹🇷) Projelerimde yararlı widget çözümleri kullanıyorum ve çoğu zaman orada kalıyor. Bunları hem ben hemde sizden gelenler ile birlikte biriktirip burada toplamak istiyorum. Eğer sizde katılmak isterseniz [bu dökümanı](https://github.com/VB10/flutter-ready-to-use-widgets/blob/master/github/rules/contribute.md#kendi-özel-widget-çözümümü-nasıl-paylaşırım)okumayı unutmayın.
+(🇹🇷) Projelerimde yararlı widget çözümleri kullanıyorum ve çoğu zaman orada kalıyor. Bunları hem ben hem de sizden gelenler ile birlikte biriktirip burada toplamak istiyorum. Eğer siz de katılmak isterseniz [bu dökümanı](https://github.com/VB10/flutter-ready-to-use-widgets/blob/master/github/rules/contribute.md#kendi-özel-widget-çözümümü-nasıl-paylaşırım) okumayı unutmayın.
 
-(🇺🇸)I'm using more usefull widgets on my bussines project or social project so i want to sum up all solutions only one repo with the community. If you want to contiribute or want to add your solitons, please read to [rules](https://github.com/VB10/flutter-ready-to-use-widgets/blob/master/github/rules/contribute.md#kendi-özel-widget-çözümümü-nasıl-paylaşırım) rules.
+(🇺🇸)I'm using more useful widgets on my bussines project or social project so I want to sum up all solutions only one repo with the community. If you want to contribute or want to add your solutions, please read to [rules](https://github.com/VB10/flutter-ready-to-use-widgets/blob/master/github/rules/contribute.md#kendi-özel-widget-çözümümü-nasıl-paylaşırım).
 
 ## List of core widget
 
@@ -204,14 +204,39 @@
 | Name                     | Readme                                                                                                    |
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
 | Bottom List Picker                | [Readme](lib/feature/bottomlistpicker/readme.md)  | 
-[Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif) 
+[Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif)
+| Bottom List Picker                | [Readme](github/gifs/bottomlistpicker/bottom_list_picker.gif)  | 
 
 
 # Circle Avatar Image And Alphabet
 
-| Name                     | Readme                                                                                                    |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- |
-| Circle Avatar Image And Alphabet                | [Readme](lib/feature/circle_avatar_image_and_alphabet/readme.md)  | 
-[Gif](github/gifs/circle_avatar_image_and_alphabet/circle_avatar_image_and_alphabet.gif) 
-| Bottom List Picker                | [Readme](github/gifs/bottomlistpicker/bottom_list_picker.gif)  | 
 
+
+<table>
+  <tr>
+    <td> Circle Avatar Image And Alphabet </td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/circle_avatar_image_and_alphabet/circle_avatar_image_and_alphabet.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
+                                                                                      
+ [Readme](lib/feature/circle_avatar_image_and_alphabet/readme.md)
+
+
+
+
+# Stacked Images Widget
+
+<table>
+  <tr>
+    <td>Stacked Images</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github\images\stacked_images\stackedimg.png" width=270 height=480></td>
+  </tr>
+  
+</table>
