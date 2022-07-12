@@ -9,10 +9,9 @@ class FacePileExample extends StatelessWidget {
     final List<String> urls = List.generate(5, (index) => "https://i.pravatar.cc/300");
     return Scaffold(
       backgroundColor: Colors.black,
-      body: FacePileStack(
+      body: FaceStack(
         width: 36,
         offsetValue: 0.4,
-        amount: urls.length,
         borderWidth: 1,
         borderColor: Colors.white,
         urls: urls,
