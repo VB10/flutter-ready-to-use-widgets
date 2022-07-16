@@ -124,8 +124,7 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
       onTap: () => _dropDownOnTab(controller),
       child: Card(
         margin: EdgeInsets.zero,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(MediaQuery.of(context).size.height * 0.015))),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(MediaQuery.of(context).size.height * 0.015))),
         child: Padding(
           padding: EdgeInsets.all(MediaQuery.of(context).size.height * 0.015),
           child: Row(
@@ -154,9 +153,8 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
 
   _dropDownOnTab(SearcableDdWithPaginatedRequestController controller) {
     bool isReversed = false;
-    double? possitionFromBottom = controller.key.globalPaintBounds != null
-        ? MediaQuery.of(context).size.height - controller.key.globalPaintBounds!.bottom
-        : null;
+    double? possitionFromBottom =
+        controller.key.globalPaintBounds != null ? MediaQuery.of(context).size.height - controller.key.globalPaintBounds!.bottom : null;
     double alertDialogMaxHeight = widget.dropDownMaxHeight ?? MediaQuery.of(context).size.height * 0.3;
     double? dialogPossitionFromBottom = possitionFromBottom != null ? possitionFromBottom - alertDialogMaxHeight : null;
     if (dialogPossitionFromBottom != null) {
@@ -164,8 +162,7 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
       //If dialog couldn't fit the screen, reverse it
       if (dialogPossitionFromBottom <= 0) {
         isReversed = true;
-        dialogPossitionFromBottom +=
-            alertDialogMaxHeight + controller.key.globalPaintBounds!.height + MediaQuery.of(context).size.height * 0.005;
+        dialogPossitionFromBottom += alertDialogMaxHeight + controller.key.globalPaintBounds!.height + MediaQuery.of(context).size.height * 0.005;
       } else {
         dialogPossitionFromBottom -= MediaQuery.of(context).size.height * 0.005;
       }
@@ -185,9 +182,7 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
         }
         return Padding(
           padding: EdgeInsets.only(
-              bottom: reCalculatePosition ?? 0,
-              left: MediaQuery.of(context).size.height * 0.02,
-              right: MediaQuery.of(context).size.height * 0.02),
+              bottom: reCalculatePosition ?? 0, left: MediaQuery.of(context).size.height * 0.02, right: MediaQuery.of(context).size.height * 0.02),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -211,8 +206,7 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
         Flexible(
           child: Card(
             margin: EdgeInsets.zero,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(MediaQuery.of(context).size.height * 0.015))),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(MediaQuery.of(context).size.height * 0.015))),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               verticalDirection: isReversed ? VerticalDirection.up : VerticalDirection.down,
@@ -285,12 +279,11 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
                       } else {
                         return ValueListenableBuilder(
                           valueListenable: controller.state,
-                          builder: (context, SearcableDdWithPaginatedRequestState state, child) =>
-                              state == SearcableDdWithPaginatedRequestState.Busy
-                                  ? const Center(
-                                      child: CircularProgressIndicator(),
-                                    )
-                                  : const SizedBox(),
+                          builder: (context, SearcableDdWithPaginatedRequestState state, child) => state == SearcableDdWithPaginatedRequestState.Busy
+                              ? const Center(
+                                  child: CircularProgressIndicator(),
+                                )
+                              : const SizedBox(),
                         );
                       }
                     },
@@ -312,8 +305,7 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
         valueListenable: controller.selectedItem,
         builder: (context, BaseModel? selectedItem, child) => Text(
               (selectedItem != null ? (selectedItem.toJson()?[widget.nameField] ?? '') : widget.hintText),
-              style: widget.style
-                      ?.copyWith(color: selectedItem == null ? (widget.style?.color ?? Colors.black).withOpacity(0.5) : null) ??
+              style: widget.style?.copyWith(color: selectedItem == null ? (widget.style?.color ?? Colors.black).withOpacity(0.5) : null) ??
                   TextStyle(color: Colors.black.withOpacity(0.5)),
             ));
   }
@@ -398,8 +390,7 @@ class CustomSearchBar extends StatelessWidget {
             )
           : Card(
               margin: EdgeInsets.zero,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(MediaQuery.of(context).size.height * 0.015))),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(MediaQuery.of(context).size.height * 0.015))),
               child: _buildTextField(),
             ),
     );
@@ -411,8 +402,7 @@ class CustomInkwell extends StatelessWidget {
   final EdgeInsets? padding;
   final Widget child;
   final bool disableTabEfect;
-  const CustomInkwell({Key? key, required this.onTap, required this.child, this.padding, this.disableTabEfect = false})
-      : super(key: key);
+  const CustomInkwell({Key? key, required this.onTap, required this.child, this.padding, this.disableTabEfect = false}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

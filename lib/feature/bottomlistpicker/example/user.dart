@@ -21,15 +21,16 @@ class User extends INetworkModel {
     website = json['website'];
   }
 
+  @override
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['name'] = this.name;
-    data['username'] = this.username;
-    data['email'] = this.email;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['id'] = id;
+    data['name'] = name;
+    data['username'] = username;
+    data['email'] = email;
 
-    data['phone'] = this.phone;
-    data['website'] = this.website;
+    data['phone'] = phone;
+    data['website'] = website;
 
     return data;
   }

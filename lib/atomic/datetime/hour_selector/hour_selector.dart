@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../feature/dropdown/searchable_dropdown_with_paginated_request/searchable_dropdown_with_paginated_request.dart';
 
 extension CustomTimeOfDayExtension on TimeOfDay {
-  Duration substract(TimeOfDay timeOfDay) =>
-      Duration(hours: hour, minutes: minute) - Duration(hours: timeOfDay.hour, minutes: timeOfDay.minute);
+  Duration substract(TimeOfDay timeOfDay) => Duration(hours: hour, minutes: minute) - Duration(hours: timeOfDay.hour, minutes: timeOfDay.minute);
 
   TimeOfDay addMinutes(int minutes) {
     if (minutes == 0) return this;
@@ -19,6 +18,7 @@ extension CustomTimeOfDayExtension on TimeOfDay {
   String toStringFormat() => (hour < 10 ? '0' : '') + '$hour:' + (minute < 10 ? '0' : '') + '$minute';
 }
 
+// ignore: todo
 //TODO bu widgeta disabled hours özelliği de kazandırılabilir. Verilen saatler kırmızı gelir ve seçilemez.
 
 // ignore: must_be_immutable
@@ -160,8 +160,7 @@ class SelectableHourWidget extends StatelessWidget {
   final TimeOfDay time;
   final SelectableHourStatus selectableHourStatus;
   final Function(TimeOfDay time) onTap;
-  const SelectableHourWidget({Key? key, required this.time, required this.selectableHourStatus, required this.onTap})
-      : super(key: key);
+  const SelectableHourWidget({Key? key, required this.time, required this.selectableHourStatus, required this.onTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
