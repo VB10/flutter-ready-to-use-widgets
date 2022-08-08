@@ -98,7 +98,7 @@ class _ChartDataWidgetState extends State<ChartDataWidget> {
                       borderColor: const Color(0xff0077b6),
                       borderDrawMode: BorderDrawMode.top,
                       dataSource: widget.chartData,
-                      xValueMapper: (ChartData data, _) => data.y!,
+                      xValueMapper: (ChartData data, _) => data.y,
                       yValueMapper: (ChartData data, _) => data.x,
                     ),
                   ],
