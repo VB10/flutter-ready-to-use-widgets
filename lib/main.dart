@@ -53,6 +53,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Material App', home: ExampleGlowImage());
+    return const MaterialApp(title: 'Material App', home: ExampleGlowImage());
   }
 }

@@ -1,5 +1,6 @@
 import 'package:async/async.dart';
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 
 import '../../../core/models/base_model.dart';
 import 'searchable_dropdown_with_paginated_request_controller.dart';
@@ -74,10 +75,12 @@ class SearchAbleDropdownWithPaginatedRequest extends StatefulWidget {
       : super(key: key);
 
   @override
-  State<SearchAbleDropdownWithPaginatedRequest> createState() => _SearchAbleDropdownWithPaginatedRequestState();
+  State<SearchAbleDropdownWithPaginatedRequest> createState() =>
+      _SearchAbleDropdownWithPaginatedRequestState();
 }
 
-class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropdownWithPaginatedRequest> {
+class _SearchAbleDropdownWithPaginatedRequestState
+    extends State<SearchAbleDropdownWithPaginatedRequest> {
   late SearcableDdWithPaginatedRequestController controller;
 
   @override
@@ -110,22 +113,26 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
   }
 
   Padding get labelText => Padding(
-        padding: EdgeInsets.only(left: MediaQuery.of(context).size.height * 0.015),
+        padding:
+            EdgeInsets.only(left: MediaQuery.of(context).size.height * 0.015),
         child: Text(
           widget.label! + (widget.isRequired ? '*' : ''),
-          style: TextStyle(fontSize: MediaQuery.of(context).size.height * 0.022),
+          style:
+              TextStyle(fontSize: MediaQuery.of(context).size.height * 0.022),
         ),
       );
 
-  CustomInkwell buildDropDown(SearcableDdWithPaginatedRequestController controller) {
+  CustomInkwell buildDropDown(
+      SearcableDdWithPaginatedRequestController controller) {
     return CustomInkwell(
       padding: EdgeInsets.zero,
       disableTabEfect: true,
       onTap: () => _dropDownOnTab(controller),
       child: Card(
         margin: EdgeInsets.zero,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(MediaQuery.of(context).size.height * 0.015))),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(
+                Radius.circular(MediaQuery.of(context).size.height * 0.015))),
         child: Padding(
           padding: EdgeInsets.all(MediaQuery.of(context).size.height * 0.015),
           child: Row(
@@ -135,7 +142,9 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     if (widget.leadingIcon != null) widget.leadingIcon!,
-                    if (widget.leadingIcon != null) SizedBox(width: MediaQuery.of(context).size.height * 0.01),
+                    if (widget.leadingIcon != null)
+                      SizedBox(
+                          width: MediaQuery.of(context).size.height * 0.01),
                     dropDownText(controller),
                   ],
                 ),
@@ -155,17 +164,22 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
   _dropDownOnTab(SearcableDdWithPaginatedRequestController controller) {
     bool isReversed = false;
     double? possitionFromBottom = controller.key.globalPaintBounds != null
-        ? MediaQuery.of(context).size.height - controller.key.globalPaintBounds!.bottom
+        ? MediaQuery.of(context).size.height -
+            controller.key.globalPaintBounds!.bottom
         : null;
-    double alertDialogMaxHeight = widget.dropDownMaxHeight ?? MediaQuery.of(context).size.height * 0.3;
-    double? dialogPossitionFromBottom = possitionFromBottom != null ? possitionFromBottom - alertDialogMaxHeight : null;
+    double alertDialogMaxHeight =
+        widget.dropDownMaxHeight ?? MediaQuery.of(context).size.height * 0.3;
+    double? dialogPossitionFromBottom = possitionFromBottom != null
+        ? possitionFromBottom - alertDialogMaxHeight
+        : null;
     if (dialogPossitionFromBottom != null) {
       //Dialog ekrana sığmıyor ise reverseler
       //If dialog couldn't fit the screen, reverse it
       if (dialogPossitionFromBottom <= 0) {
         isReversed = true;
-        dialogPossitionFromBottom +=
-            alertDialogMaxHeight + controller.key.globalPaintBounds!.height + MediaQuery.of(context).size.height * 0.005;
+        dialogPossitionFromBottom += alertDialogMaxHeight +
+            controller.key.globalPaintBounds!.height +
+            MediaQuery.of(context).size.height * 0.005;
       } else {
         dialogPossitionFromBottom -= MediaQuery.of(context).size.height * 0.005;
       }
@@ -180,8 +194,10 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
         double keyboardHeight = MediaQuery.of(context).viewInsets.bottom;
         //Keyboard varsa digalogu ofsetler
         //If keyboard pushes the dialog, recalculate the dialog's possition.
-        if (reCalculatePosition != null && reCalculatePosition <= keyboardHeight) {
-          reCalculatePosition = (keyboardHeight - reCalculatePosition) + reCalculatePosition;
+        if (reCalculatePosition != null &&
+            reCalculatePosition <= keyboardHeight) {
+          reCalculatePosition =
+              (keyboardHeight - reCalculatePosition) + reCalculatePosition;
         }
         return Padding(
           padding: EdgeInsets.only(
@@ -204,18 +220,22 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
     );
   }
 
-  Widget _buildStatefullDropdownCard(SearcableDdWithPaginatedRequestController controller, bool isReversed) {
+  Widget _buildStatefullDropdownCard(
+      SearcableDdWithPaginatedRequestController controller, bool isReversed) {
     return Column(
-      mainAxisAlignment: isReversed ? MainAxisAlignment.end : MainAxisAlignment.start,
+      mainAxisAlignment:
+          isReversed ? MainAxisAlignment.end : MainAxisAlignment.start,
       children: [
         Flexible(
           child: Card(
             margin: EdgeInsets.zero,
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(MediaQuery.of(context).size.height * 0.015))),
+                borderRadius: BorderRadius.all(Radius.circular(
+                    MediaQuery.of(context).size.height * 0.015))),
             child: Column(
               mainAxisSize: MainAxisSize.min,
-              verticalDirection: isReversed ? VerticalDirection.up : VerticalDirection.down,
+              verticalDirection:
+                  isReversed ? VerticalDirection.up : VerticalDirection.down,
               children: [
                 buildSearchBar(controller),
                 Flexible(
@@ -237,7 +257,8 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
         changeCompletionDelay: const Duration(milliseconds: 200),
         hintText: 'Search',
         isOutlined: true,
-        leadingIcon: Icon(Icons.search, size: MediaQuery.of(context).size.height * 0.033),
+        leadingIcon: Icon(Icons.search,
+            size: MediaQuery.of(context).size.height * 0.033),
         onChangeComplete: (value) {
           controller.searchText = value;
           if (value == '') {
@@ -250,18 +271,20 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
     );
   }
 
-  Widget buildListView(SearcableDdWithPaginatedRequestController controller, bool isReversed) {
+  Widget buildListView(
+      SearcableDdWithPaginatedRequestController controller, bool isReversed) {
     return ValueListenableBuilder(
       valueListenable: controller.itemList,
       builder: (context, List<BaseModel>? itemList, child) => itemList == null
           ? const Center(child: CircularProgressIndicator())
           : itemList.isEmpty
               ? Padding(
-                  padding: EdgeInsets.all(MediaQuery.of(context).size.height * 0.015),
+                  padding: EdgeInsets.all(
+                      MediaQuery.of(context).size.height * 0.015),
                   child: const Text('No record'),
                 )
               : Scrollbar(
-                  isAlwaysShown: true,
+                  thumbVisibility: true,
                   controller: controller.scrollController,
                   child: ListView.builder(
                     controller: controller.scrollController,
@@ -285,7 +308,9 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
                       } else {
                         return ValueListenableBuilder(
                           valueListenable: controller.state,
-                          builder: (context, SearcableDdWithPaginatedRequestState state, child) =>
+                          builder: (context,
+                                  SearcableDdWithPaginatedRequestState state,
+                                  child) =>
                               state == SearcableDdWithPaginatedRequestState.Busy
                                   ? const Center(
                                       child: CircularProgressIndicator(),
@@ -311,10 +336,15 @@ class _SearchAbleDropdownWithPaginatedRequestState extends State<SearchAbleDropd
     return ValueListenableBuilder(
         valueListenable: controller.selectedItem,
         builder: (context, BaseModel? selectedItem, child) => Text(
-              (selectedItem != null ? (selectedItem.toJson()?[widget.nameField] ?? '') : widget.hintText),
-              style: widget.style
-                      ?.copyWith(color: selectedItem == null ? (widget.style?.color ?? Colors.black).withOpacity(0.5) : null) ??
-                  TextStyle(color: Colors.black.withOpacity(0.5)),
+              (selectedItem != null
+                  ? (selectedItem.toJson()?[widget.nameField] ?? '')
+                  : widget.hintText),
+              style: widget.style?.copyWith(
+                      color: selectedItem == null
+                          ? (widget.style?.color ?? ColorConstants.black)
+                              .withOpacity(0.5)
+                          : null) ??
+                  TextStyle(color: ColorConstants.black.withOpacity(0.5)),
             ));
   }
 }
@@ -391,15 +421,18 @@ class CustomSearchBar extends StatelessWidget {
       child: isOutlined
           ? Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(MediaQuery.of(context).size.height * 0.01),
-                border: Border.all(color: (style?.color ?? Colors.black).withOpacity(0.5)),
+                borderRadius: BorderRadius.circular(
+                    MediaQuery.of(context).size.height * 0.01),
+                border: Border.all(
+                    color: (style?.color ?? Colors.black).withOpacity(0.5)),
               ),
               child: _buildTextField(),
             )
           : Card(
               margin: EdgeInsets.zero,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(MediaQuery.of(context).size.height * 0.015))),
+                  borderRadius: BorderRadius.all(Radius.circular(
+                      MediaQuery.of(context).size.height * 0.015))),
               child: _buildTextField(),
             ),
     );
@@ -411,7 +444,12 @@ class CustomInkwell extends StatelessWidget {
   final EdgeInsets? padding;
   final Widget child;
   final bool disableTabEfect;
-  const CustomInkwell({Key? key, required this.onTap, required this.child, this.padding, this.disableTabEfect = false})
+  const CustomInkwell(
+      {Key? key,
+      required this.onTap,
+      required this.child,
+      this.padding,
+      this.disableTabEfect = false})
       : super(key: key);
 
   @override
@@ -421,9 +459,11 @@ class CustomInkwell extends StatelessWidget {
       splashColor: disableTabEfect ? Colors.transparent : null,
       highlightColor: disableTabEfect ? Colors.transparent : null,
       onTap: onTap,
-      borderRadius: BorderRadius.circular(MediaQuery.of(context).size.height * 0.015),
+      borderRadius:
+          BorderRadius.circular(MediaQuery.of(context).size.height * 0.015),
       child: Padding(
-        padding: padding ?? EdgeInsets.all(MediaQuery.of(context).size.height * 0.015),
+        padding: padding ??
+            EdgeInsets.all(MediaQuery.of(context).size.height * 0.015),
         child: child,
       ),
     );
