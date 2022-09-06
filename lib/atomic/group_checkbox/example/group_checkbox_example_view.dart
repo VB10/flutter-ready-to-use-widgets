@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 
 import '../model/abstract_checkbox_item.dart';
 import '../model/city_model.dart';
@@ -10,7 +11,8 @@ class GroupCheckboxExampleView extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<GroupCheckboxExampleView> createState() => _GroupCheckboxExampleViewState();
+  State<GroupCheckboxExampleView> createState() =>
+      _GroupCheckboxExampleViewState();
 }
 
 class _GroupCheckboxExampleViewState extends State<GroupCheckboxExampleView> {
@@ -20,8 +22,10 @@ class _GroupCheckboxExampleViewState extends State<GroupCheckboxExampleView> {
   ICheckBoxItem? initialItem;
   ICheckBoxItem? lastSelectedItem;
 
-  TextStyle contentTextStyle = const TextStyle(fontSize: 24, color: Colors.red);
-  TextStyle titleTextStyle = const TextStyle(fontSize: 32, color: Colors.black);
+  TextStyle contentTextStyle =
+      const TextStyle(fontSize: 24, color: ColorConstants.pomegranate);
+  TextStyle titleTextStyle =
+      const TextStyle(fontSize: 32, color: ColorConstants.black);
 
   @override
   void initState() {
@@ -50,8 +54,10 @@ class _GroupCheckboxExampleViewState extends State<GroupCheckboxExampleView> {
                 });
               },
               allSelectedItemList: (List<ICheckBoxItem>? allSelectedItems) {
-                debugPrint('All selected items lenght : ${allSelectedItems?.length}');
-                debugPrint('All selected items : ${allSelectedItems?.toString()}');
+                debugPrint(
+                    'All selected items lenght : ${allSelectedItems?.length}');
+                debugPrint(
+                    'All selected items : ${allSelectedItems?.toString()}');
                 _allSelectedItemList = allSelectedItems;
                 setState(() {});
               },
@@ -76,7 +82,9 @@ class _GroupCheckboxExampleViewState extends State<GroupCheckboxExampleView> {
                   _isMultiSelectEnable = !_isMultiSelectEnable;
                 });
               },
-              child: Text(_isMultiSelectEnable ? 'Multi Select Enabled' : 'Multi Select Disabled'),
+              child: Text(_isMultiSelectEnable
+                  ? 'Multi Select Enabled'
+                  : 'Multi Select Disabled'),
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
                     _isMultiSelectEnable ? Colors.green : Colors.red,
@@ -104,7 +112,7 @@ class _GroupCheckboxExampleViewState extends State<GroupCheckboxExampleView> {
               itemCount: _cityList.length,
               itemBuilder: (context, index) {
                 return InkWell(
-                  hoverColor: Colors.black,
+                  hoverColor: ColorConstants.black,
                   onTap: () {
                     setState(() {
                       _allSelectedItemList?.clear();

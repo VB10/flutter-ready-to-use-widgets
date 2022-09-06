@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 import 'package:vexana/vexana.dart';
 
 class BottomListPicker<T extends INetworkModel> extends StatefulWidget {
@@ -36,12 +37,16 @@ class BottomListPicker<T extends INetworkModel> extends StatefulWidget {
         clipBehavior: Clip.antiAliasWithSaveLayer,
         builder: (context) {
           return BottomListPicker(
-              textController: textController, fecthData: fecthData, showedField: showedField, onChanged: onChanged);
+              textController: textController,
+              fecthData: fecthData,
+              showedField: showedField,
+              onChanged: onChanged);
         });
   }
 }
 
-class _BottomListPickerState<T extends INetworkModel> extends State<BottomListPicker> {
+class _BottomListPickerState<T extends INetworkModel>
+    extends State<BottomListPicker> {
   List<Map<String, dynamic>?>? data;
   bool loading = true;
   String error = "";
@@ -80,7 +85,7 @@ class _BottomListPickerState<T extends INetworkModel> extends State<BottomListPi
             onPressed: () => Navigator.pop(context),
             child: Text(
               widget.buttonText ?? "Tamam",
-              style: const TextStyle(color: Colors.blue),
+              style: const TextStyle(color: ColorConstants.dodgerBlue),
             ),
           ),
           Expanded(
@@ -92,19 +97,22 @@ class _BottomListPickerState<T extends INetworkModel> extends State<BottomListPi
                       ? Center(
                           child: Text(
                             error,
-                            style: const TextStyle(color: Colors.red),
+                            style: const TextStyle(
+                                color: ColorConstants.pomegranate),
                           ),
                         )
                       : CupertinoPicker(
                           onSelectedItemChanged: (index) {
-                            widget.textController?.text = data![index]![widget.showedField];
+                            widget.textController?.text =
+                                data![index]![widget.showedField];
                             if (widget.onChanged != null) {
                               widget.onChanged!(data![index]!);
                             }
                           },
                           scrollController: FixedExtentScrollController(
-                              initialItem: data?.indexWhere(
-                                      (element) => element![widget.showedField] == widget.textController?.text) ??
+                              initialItem: data?.indexWhere((element) =>
+                                      element![widget.showedField] ==
+                                      widget.textController?.text) ??
                                   0),
                           itemExtent: 35,
                           looping: false,
