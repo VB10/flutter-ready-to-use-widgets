@@ -222,6 +222,18 @@
 
 
 
+# Rating Bar
+
+
+<table>
+  <tr>
+    <td> Heart Icon Bar </td>
+    <td> Star Icon Bar </td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/rating_bar/heart_icon.gif" width=270 height=480></td>
+    <td><img src="github/gifs/rating_bar/star_icon.gif" width=270 height=480></td>
 # Stacked Images Widget
 
 <table>
