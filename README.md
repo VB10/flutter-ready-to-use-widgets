@@ -1,8 +1,8 @@
 # Ready to use widgets
 
-(🇹🇷) Projelerimde yararlı widget çözümleri kullanıyorum ve çoğu zaman orada kalıyor. Bunları hem ben hemde sizden gelenler ile birlikte biriktirip burada toplamak istiyorum. Eğer sizde katılmak isterseniz [bu dökümanı](https://github.com/VB10/flutter-ready-to-use-widgets/blob/master/github/rules/contribute.md#kendi-özel-widget-çözümümü-nasıl-paylaşırım)okumayı unutmayın.
+(🇹🇷) Projelerimde yararlı widget çözümleri kullanıyorum ve çoğu zaman orada kalıyor. Bunları hem ben hem de sizden gelenler ile birlikte biriktirip burada toplamak istiyorum. Eğer siz de katılmak isterseniz [bu dökümanı](https://github.com/VB10/flutter-ready-to-use-widgets/blob/master/github/rules/contribute.md#kendi-özel-widget-çözümümü-nasıl-paylaşırım) okumayı unutmayın.
 
-(🇺🇸)I'm using more usefull widgets on my bussines project or social project so i want to sum up all solutions only one repo with the community. If you want to contiribute or want to add your solitons, please read to [rules](https://github.com/VB10/flutter-ready-to-use-widgets/blob/master/github/rules/contribute.md#kendi-özel-widget-çözümümü-nasıl-paylaşırım) rules.
+(🇺🇸)I'm using more useful widgets on my bussines project or social project so I want to sum up all solutions only one repo with the community. If you want to contribute or want to add your solutions, please read to [rules](https://github.com/VB10/flutter-ready-to-use-widgets/blob/master/github/rules/contribute.md#kendi-özel-widget-çözümümü-nasıl-paylaşırım).
 
 ## List of core widget
 
@@ -94,6 +94,19 @@
   
   <tr>
     <td><img src="github/images/custom_text_field/custom_text_field.PNG" width=270 height=480></td>
+  </tr>
+  
+</table>
+
+# FacePile
+
+<table>
+  <tr>
+    <td> FacePileStack </td>
+  </tr>
+  
+  <tr>
+  <td><img src="https://user-images.githubusercontent.com/89414084/175426259-e212a85d-f444-4b6a-b81b-dbe6f2cec930.png" width=270 height=480></td>
   </tr>
   
 </table>
@@ -204,6 +217,7 @@
 | Name                     | Readme                                                                                                    |
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
 | Bottom List Picker                | [Readme](lib/feature/bottomlistpicker/readme.md)  | 
+[Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif) 
 | Bottom List Picker                | [Readme](github/gifs/bottomlistpicker/bottom_list_picker.gif)  | 
 
 
@@ -220,6 +234,15 @@
   <tr>
     <td><img src="github/gifs/rating_bar/heart_icon.gif" width=270 height=480></td>
     <td><img src="github/gifs/rating_bar/star_icon.gif" width=270 height=480></td>
+# Stacked Images Widget
+
+<table>
+  <tr>
+    <td>Stacked Images</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github\images\stacked_images\stackedimg.png" width=270 height=480></td>
   </tr>
   
 </table>

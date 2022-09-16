@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:ready_to_use_widgets/atomic/glow_image/example_glow_image.dart';
@@ -9,7 +8,6 @@ import 'atomic/button/asynchronous_button.dart';
 import 'atomic/dropdown/example_custom_dropdown.dart';
 import 'atomic/text/animated_cross_text.dart';
 import 'feature/network_connection/cubit/network_cubit.dart';
-import 'package:ready_to_use_widgets/feature/chart/example/example_chart_view.dart';
 
 void main() => runApp(const AppBlocProvider());
 
