@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ready_to_use_widgets/core/theme/base/base_theme.dart';
+import 'package:ready_to_use_widgets/core/init/theme/base/base_theme.dart';
 
 class DarkTheme extends BaseTheme {
   static DarkTheme? _instance;
@@ -15,5 +15,6 @@ class DarkTheme extends BaseTheme {
   @override
   ThemeData get themeData => throw UnimplementedError();
 
- 
+  @override
+  TextStyle get customSnackBar => throw UnimplementedError();
 }

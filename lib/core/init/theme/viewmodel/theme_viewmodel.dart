@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:ready_to_use_widgets/core/theme/base/base_theme.dart';
-import 'package:ready_to_use_widgets/core/theme/enum/theme_enum.dart';
+import 'package:ready_to_use_widgets/core/init/theme/base/base_theme.dart';
+import 'package:ready_to_use_widgets/core/init/theme/enum/theme_enum.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 import '../dark_theme.dart';
