@@ -138,6 +138,20 @@
   
 </table>
 
+# Color Constants
+
+<table>
+  <tr>
+    <td><img src="github/images/constants/sc1.png" width=900 height=250></td>
+  </tr>
+  <tr>
+    <td><img src="github/images/constants/sc3.png" width=900 height=100></td>
+  </tr>
+   <tr>
+    <td><img src="github/images/constants/sc2.png" width=900 height=200></td>
+  </tr>
+</table>
+
 
 # Divider
 
