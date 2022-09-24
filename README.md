@@ -138,6 +138,20 @@
   
 </table>
 
+# Color Constants
+
+<table>
+  <tr>
+    <td><img src="github/images/constants/sc1.png" width=900 height=250></td>
+  </tr>
+  <tr>
+    <td><img src="github/images/constants/sc3.png" width=900 height=100></td>
+  </tr>
+   <tr>
+    <td><img src="github/images/constants/sc2.png" width=900 height=200></td>
+  </tr>
+</table>
+
 
 # Divider
 
@@ -241,6 +255,18 @@
 
 
 
+# Rating Bar
+
+
+<table>
+  <tr>
+    <td> Heart Icon Bar </td>
+    <td> Star Icon Bar </td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/rating_bar/heart_icon.gif" width=270 height=480></td>
+    <td><img src="github/gifs/rating_bar/star_icon.gif" width=270 height=480></td>
 # Stacked Images Widget
 
 <table>

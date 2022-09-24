@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 
 import '../base_chart.dart';
 
@@ -18,7 +19,7 @@ class ExampleChartView extends StatelessWidget {
           padding: const EdgeInsets.all(20),
           child: BaseChart(
             pathCSV: _csvPath,
-            chartColor: Colors.green,
+            chartColor: ColorConstants.fruitSalad,
             xAxisName: xAxisName,
             yAxisName: yAxisName,
             title: title,

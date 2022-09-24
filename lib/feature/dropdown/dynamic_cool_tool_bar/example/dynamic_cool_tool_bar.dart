@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 
 import '../constants/constants.dart';
 import '../constants/page_border_radius.dart';
@@ -21,7 +22,8 @@ class _DynamicCoolToolBarState extends State<DynamicCoolToolBar> {
   bool isOnPressedCloseButton = false;
   bool isOnLongPressed = false;
 
-  double get itemHeight => Constants.toolbarWidth - (Constants.toolbarHorizontalPadding * 2);
+  double get itemHeight =>
+      Constants.toolbarWidth - (Constants.toolbarHorizontalPadding * 2);
 
   /// List of item scales
   ///
@@ -67,14 +69,17 @@ class _DynamicCoolToolBarState extends State<DynamicCoolToolBar> {
       // Difference between the position of the top edge of the item
       // and the position of the bottom edge of the toolbar container plus scroll position
       // A negative value means that the item is out of view below the toolbar container
-      double distanceToMaxScrollExtent = Constants.toolbarHeight + scrollPosition - itemTopPosition;
+      double distanceToMaxScrollExtent =
+          Constants.toolbarHeight + scrollPosition - itemTopPosition;
 
       // Position of the bottom edge of the item
-      double itemBottomPosition = (i + 1) * (itemHeight + Constants.itemsGutter);
+      double itemBottomPosition =
+          (i + 1) * (itemHeight + Constants.itemsGutter);
       // An item is out of view if it's out of view below the toolbar
       // OR if it's out of view above the toolbar (where the scroll position is further than
       // the position of the bottom edge of the item
-      bool itemIsOutOfView = distanceToMaxScrollExtent < 0 || scrollPosition > itemBottomPosition;
+      bool itemIsOutOfView =
+          distanceToMaxScrollExtent < 0 || scrollPosition > itemBottomPosition;
 
       // If the item is out of view, scale it down, if it's visible, reset it to default scale
       _itemScrollScaleValues.add(itemIsOutOfView ? 0.4 : 1);
@@ -99,7 +104,10 @@ class _DynamicCoolToolBarState extends State<DynamicCoolToolBar> {
       // than the scrollable area (the height of the toolbar_
       bool isLongPressed = itemYPositions[i] >= 0 &&
           longPressYLocation > itemYPositions[i] &&
-          longPressYLocation < (itemYPositions.length > i + 1 ? itemYPositions[i + 1] : Constants.toolbarHeight);
+          longPressYLocation <
+              (itemYPositions.length > i + 1
+                  ? itemYPositions[i + 1]
+                  : Constants.toolbarHeight);
       _longPressedItemsFlags.add(isLongPressed);
     }
     setState(() {
@@ -131,7 +139,8 @@ class _DynamicCoolToolBarState extends State<DynamicCoolToolBar> {
           padding: const PagePadding.allNormalPadding(),
           child: Stack(
             children: [
-              DragBox(initPosition: Constants.offset, child: _animatedContainer()),
+              DragBox(
+                  initPosition: Constants.offset, child: _animatedContainer()),
             ],
           ),
         ),
@@ -141,16 +150,22 @@ class _DynamicCoolToolBarState extends State<DynamicCoolToolBar> {
 
   Widget _animatedContainer() {
     return AnimatedContainer(
-      width: isOnLongPressed ? Constants.toolbarLongPressedWidth : Constants.toolbarWidth,
+      width: isOnLongPressed
+          ? Constants.toolbarLongPressedWidth
+          : Constants.toolbarWidth,
       duration: Constants.longPressAnimationDuration,
-      height: isOnPressedCloseButton ? Constants.onPressedCloseButton : Constants.toolbarHeight,
+      height: isOnPressedCloseButton
+          ? Constants.onPressedCloseButton
+          : Constants.toolbarHeight,
       child: Stack(
         children: [
           _toolbarBackgroundContainer(),
           _toolBarItemsGestureDetector(),
           AnimatedAlign(
             duration: Constants.longPressAnimationDuration,
-            alignment: isOnPressedCloseButton ? Alignment.topLeft : Alignment.bottomLeft,
+            alignment: isOnPressedCloseButton
+                ? Alignment.topLeft
+                : Alignment.bottomLeft,
             child: _closeIconButton(),
           )
         ],
@@ -162,12 +177,12 @@ class _DynamicCoolToolBarState extends State<DynamicCoolToolBar> {
     return Container(
       width: Constants.toolbarWidth,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: ColorConstants.white,
         borderRadius: PageBorderRadius.allNormalCircular(),
         boxShadow: [
           BoxShadow(
             blurRadius: 20,
-            color: Colors.black.withOpacity(0.2),
+            color: ColorConstants.black.withOpacity(0.2),
           ),
         ],
       ),
@@ -226,7 +241,9 @@ class _DynamicCoolToolBarState extends State<DynamicCoolToolBar> {
         isOnPressedCloseButton = !isOnPressedCloseButton;
         setState(() {});
       },
-      child: Icon(isOnPressedCloseButton ? Icons.keyboard_arrow_down_rounded : Icons.keyboard_arrow_up_rounded),
+      child: Icon(isOnPressedCloseButton
+          ? Icons.keyboard_arrow_down_rounded
+          : Icons.keyboard_arrow_up_rounded),
     );
   }
 }
