@@ -231,8 +231,27 @@
 | Name                     | Readme                                                                                                    |
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
 | Bottom List Picker                | [Readme](lib/feature/bottomlistpicker/readme.md)  | 
-[Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif) 
+[Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif)
 | Bottom List Picker                | [Readme](github/gifs/bottomlistpicker/bottom_list_picker.gif)  | 
+
+
+# Circle Avatar Image And Alphabet
+
+
+
+<table>
+  <tr>
+    <td> Circle Avatar Image And Alphabet </td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/circle_avatar_image_and_alphabet/circle_avatar_image_and_alphabet.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
+                                                                                      
+ [Readme](lib/feature/circle_avatar_image_and_alphabet/readme.md)
+
 
 
 
