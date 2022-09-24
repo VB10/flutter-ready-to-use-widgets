@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'glow_image.dart';
 
 class ExampleGlowImage extends StatefulWidget {
-  ExampleGlowImage({Key? key}) : super(key: key);
+  const ExampleGlowImage({Key? key}) : super(key: key);
 
   @override
   State<ExampleGlowImage> createState() => _ExampleGlowImageState();
@@ -14,8 +14,7 @@ class _ExampleGlowImageState extends State<ExampleGlowImage> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    final _width = 300.0;
+    const _width = 300.0;
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -30,9 +29,9 @@ class _ExampleGlowImageState extends State<ExampleGlowImage> {
                 child: AnimatedContainer(
                   curve: Curves.easeInOutBack,
                   width: tapped ? _width : _width * 0.8,
-                  duration: Duration(milliseconds: 450),
+                  duration: const Duration(milliseconds: 450),
                   child: GlowImage(
-                    child: Photo()
+                    child: const Photo()
                     // Container(
                     //   width: _width,
                     //   color: Colors.green,

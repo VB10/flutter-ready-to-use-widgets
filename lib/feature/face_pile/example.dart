@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 import 'package:ready_to_use_widgets/feature/face_pile/face_pile_stack.dart';
 
 class FacePileExample extends StatelessWidget {
@@ -6,14 +7,15 @@ class FacePileExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<String> urls = List.generate(5, (index) => "https://i.pravatar.cc/300");
+    final List<String> urls =
+        List.generate(5, (index) => "https://i.pravatar.cc/300");
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: ColorConstants.black,
       body: FaceStack(
         width: 36,
         offsetValue: 0.4,
         borderWidth: 1,
-        borderColor: Colors.white,
+        borderColor: ColorConstants.white,
         urls: urls,
       ),
     );

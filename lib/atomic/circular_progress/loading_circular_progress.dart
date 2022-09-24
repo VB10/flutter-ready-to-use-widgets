@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 
 class LoadingCircular extends StatelessWidget {
   final dynamic progress;
@@ -29,7 +29,7 @@ class LoadingCircular extends StatelessWidget {
           width: width,
           height: height,
           child: CircularProgressIndicator(
-            backgroundColor: Colors.white70,
+            backgroundColor: ColorConstants.white70,
             value: progress,
             color: color,
             strokeWidth: 3.0,

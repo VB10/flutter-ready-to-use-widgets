@@ -7,15 +7,18 @@ enum SearcableDdWithPaginatedRequestState { Initial, Busy, Error, Loaded }
 
 class SearcableDdWithPaginatedRequestController {
   final ValueNotifier<SearcableDdWithPaginatedRequestState> state =
-      ValueNotifier<SearcableDdWithPaginatedRequestState>(SearcableDdWithPaginatedRequestState.Initial);
+      ValueNotifier<SearcableDdWithPaginatedRequestState>(
+          SearcableDdWithPaginatedRequestState.Initial);
 
   ScrollController scrollController = ScrollController();
   GlobalKey key = GlobalKey();
   FocusNode searchFocusNode = FocusNode();
 
-  final ValueNotifier<BaseModel?> selectedItem = ValueNotifier<BaseModel?>(null);
+  final ValueNotifier<BaseModel?> selectedItem =
+      ValueNotifier<BaseModel?>(null);
 
-  final ValueNotifier<List<BaseModel>?> itemList = ValueNotifier<List<BaseModel>?>(null);
+  final ValueNotifier<List<BaseModel>?> itemList =
+      ValueNotifier<List<BaseModel>?>(null);
 
   late Function(int page, String? key)? getRequestFunc;
 
@@ -25,7 +28,8 @@ class SearcableDdWithPaginatedRequestController {
 
   void onInit() {
     scrollController.addListener(() {
-      if (scrollController.position.atEdge && scrollController.position.pixels != 0) {
+      if (scrollController.position.atEdge &&
+          scrollController.position.pixels != 0) {
         if (searchText.isNotEmpty) {
           getRequest(page: _page, key: searchText);
         } else {
@@ -40,7 +44,8 @@ class SearcableDdWithPaginatedRequestController {
     scrollController.dispose();
   }
 
-  Future<void> getRequest({required int page, String? key, bool isNewSearch = false}) async {
+  Future<void> getRequest(
+      {required int page, String? key, bool isNewSearch = false}) async {
     if (getRequestFunc != null) {
       if (isNewSearch) {
         _page = 1;
@@ -66,7 +71,7 @@ class SearcableDdWithPaginatedRequestController {
         }
 
         debugPrint('has more data: $_hasMoreData');
-      } catch (exception, stackTrace) {
+      } catch (exception) {
         state.value = SearcableDdWithPaginatedRequestState.Error;
         throw Exception(exception);
         //await Sentry.captureException(exception, stackTrace: stackTrace);
