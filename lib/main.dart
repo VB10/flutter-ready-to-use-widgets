@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
-import 'package:ready_to_use_widgets/atomic/wide_expansion_panel/wide_expansion_panel_example.dart';
-
+import 'package:ready_to_use_widgets/atomic/custom_animated/example_animated.dart';
 import 'feature/network_connection/cubit/network_cubit.dart';
 
 void main() => runApp(const AppBlocProvider());
@@ -53,6 +52,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: 'Material App', home: WideExpansionPanel());
+    return const MaterialApp(title: 'Material App', home: CustomAnimated());
   }
 }
