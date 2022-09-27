@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 
 ExpansionPanel wideExpansionPanel(
     {required Widget body,
@@ -9,13 +10,14 @@ ExpansionPanel wideExpansionPanel(
     ElevatedButton(
         style: ButtonStyle(
             backgroundColor:
-                MaterialStateProperty.all<Color>(const Color(0xff2f5cff)),
+                MaterialStateProperty.all<Color>(ColorConstants.steelGray),
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15.0),
             ))),
         onPressed: () {},
-        child: const Text('Stokta', style: TextStyle(color: Colors.white))),
+        child: const Text('Stokta',
+            style: TextStyle(color: ColorConstants.white))),
     Padding(
       padding: const EdgeInsets.only(right: 10.0),
       child: Column(
