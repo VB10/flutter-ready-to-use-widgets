@@ -28,4 +28,11 @@ class LightTheme extends BaseTheme {
           color: ColorConstants.dodgerBlue,
         ),
       );
+  @override
+  TextStyle get itemCardWidgetTextStyle => GoogleFonts.ubuntu(
+        textStyle: const TextStyle(
+            color: ColorConstants.white,
+            fontSize: 14,
+            fontWeight: FontWeight.w600),
+      );
 }
