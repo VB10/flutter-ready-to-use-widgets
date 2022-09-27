@@ -11,6 +11,12 @@ class WideExpansionPanel extends StatelessWidget {
       body: Column(
         children: [
           WideExpansionPanelList(
+            kontrolText: 'Kontrol',
+            durumText: 'Durum',
+            isAdiText: 'İş Adı',
+            isIdText: 'İş ID',
+            revizyonText: 'Revizyon',
+            urunKoduText: 'Ürün Kodu',
             data: [
               Data(expandedValue: 'expandedValue', headerValue: 'headerValue')
             ],
