@@ -12,4 +12,7 @@ class ColorConstants {
   static const Color pomegranate = Color(0xFFE91E63);
   static const Color dodgerBlue = Color(0xFF2196F3);
   static const Color fruitSalad = Color(0xFF4CAF50);
+  static const Color blueGray = Color(0xFF607D8B);
+    static const Color steelGray = Color(0xFF201E2A);
+
 }
