@@ -1,13 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:ready_to_use_widgets/atomic/wide_expansion_panel/wide_expansion_panel.dart';
+import 'package:ready_to_use_widgets/core/init/extensions/context_extension.dart';
 
 class WideExpansionPanelList extends StatefulWidget {
   final List<Data> data;
-  const WideExpansionPanelList({Key? key, required this.data}) : super(key: key);
+  final String? kontrolText;
+  final String? durumText;
+  final String? urunKoduText;
+  final String? isAdiText;
+  final String? isIdText;
+  final String? revizyonText;
+  const WideExpansionPanelList(
+      {Key? key,
+      required this.data,
+      this.kontrolText,
+      this.durumText,
+      this.urunKoduText,
+      this.isAdiText,
+      this.isIdText,
+      this.revizyonText})
+      : super(key: key);
 
   @override
-  State<WideExpansionPanelList> createState() =>
-      _WideExpansionPanelListState();
+  State<WideExpansionPanelList> createState() => _WideExpansionPanelListState();
 }
 
 class _WideExpansionPanelListState extends State<WideExpansionPanelList> {
@@ -39,84 +54,52 @@ class _WideExpansionPanelListState extends State<WideExpansionPanelList> {
   buildDataTable() {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
-      child: DataTable(columns: const [
+      child: DataTable(columns: [
         DataColumn(
-          label: Text(
-            'Kontrol',
-            style: TextStyle(fontStyle: FontStyle.italic),
-          ),
+          label: Text(widget.kontrolText.toString(),
+              style: context.appTheme().wideExpansionPanelTextStyle),
         ),
         DataColumn(
-          label: Text(
-            'Durum',
-            style: TextStyle(fontStyle: FontStyle.italic),
-          ),
+          label: Text(widget.durumText.toString(),
+              style: context.appTheme().wideExpansionPanelTextStyle),
         ),
         DataColumn(
-          label: Text(
-            'Ürün Kodu',
-            style: TextStyle(fontStyle: FontStyle.italic),
-          ),
+          label: Text(widget.urunKoduText.toString(),
+              style: context.appTheme().wideExpansionPanelTextStyle),
         ),
         DataColumn(
-          label: Text(
-            'İş Adı',
-            style: TextStyle(fontStyle: FontStyle.italic),
-          ),
+          label: Text(widget.isAdiText.toString(),
+              style: context.appTheme().wideExpansionPanelTextStyle),
         ),
         DataColumn(
-          label: Text(
-            'İş Id',
-            style: TextStyle(fontStyle: FontStyle.italic),
-          ),
+          label: Text(widget.isIdText.toString(),
+              style: context.appTheme().wideExpansionPanelTextStyle),
         ),
         DataColumn(
-          label: Text(
-            'Revizyon',
-            style: TextStyle(fontStyle: FontStyle.italic),
-          ),
+          label: Text(widget.revizyonText.toString(),
+              style: context.appTheme().wideExpansionPanelTextStyle),
         ),
       ], rows: [
-        DataRow(
-          cells: <DataCell>[
-            DataCell(Checkbox(
-              value: true,
-              onChanged: (value) {},
-            )),
-            const DataCell(Text('Stokta')),
-            const DataCell(Text('4564564564')),
-            const DataCell(Text('GIDA REGULASYON_SOGUTUCU')),
-            const DataCell(Text('5247')),
-            const DataCell(Text('')),
-          ],
-        ),
-        DataRow(
-          cells: <DataCell>[
-            DataCell(Checkbox(
-              value: false,
-              onChanged: (value) {},
-            )),
-            const DataCell(Text('Stokta')),
-            const DataCell(Text('4564564564')),
-            const DataCell(Text('GIDA REGULASYON_SOGUTUCU')),
-            const DataCell(Text('5247')),
-            const DataCell(Text('')),
-          ],
-        ),
-        DataRow(
-          cells: <DataCell>[
-            DataCell(Checkbox(
-              value: false,
-              onChanged: (value) {},
-            )),
-            const DataCell(Text('Stokta')),
-            const DataCell(Text('4564564564')),
-            const DataCell(Text('GIDA REGULASYON_SOGUTUCU')),
-            const DataCell(Text('5247')),
-            const DataCell(Text('')),
-          ],
-        ),
+        buildDataRow(),
+        buildDataRow(),
+        buildDataRow(),
       ]),
+    );
+  }
+
+  DataRow buildDataRow() {
+    return DataRow(
+      cells: <DataCell>[
+        DataCell(Checkbox(
+          value: false,
+          onChanged: (value) {},
+        )),
+        const DataCell(Text('Stokta')),
+        const DataCell(Text('4564564564')),
+        const DataCell(Text('GIDA REGULASYON_SOGUTUCU')),
+        const DataCell(Text('5247')),
+        const DataCell(Text('50')),
+      ],
     );
   }
 }
