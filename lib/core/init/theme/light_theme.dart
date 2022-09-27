@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ready_to_use_widgets/atomic/beauty_textfield/beauty_textfield.dart';
 import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 import 'package:ready_to_use_widgets/core/init/theme/base/base_theme.dart';
 
@@ -21,18 +20,18 @@ class LightTheme extends BaseTheme {
   // Örnek olarak yapılmıştır.
 
   @override
-  TextStyle get customSnackBar => GoogleFonts.ubuntu(
-        textStyle: const TextStyle(
-          fontSize: 16,
-          fontWeight: FontWeight.bold,
-          color: ColorConstants.dodgerBlue,
-        ),
-      );
-  @override
   TextStyle get itemCardWidgetTextStyle => GoogleFonts.ubuntu(
         textStyle: const TextStyle(
             color: ColorConstants.white,
             fontSize: 14,
             fontWeight: FontWeight.w600),
+      );
+  @override
+  TextStyle get wideExpansionPanelTextStyle => GoogleFonts.ubuntu(
+        textStyle: const TextStyle(
+            color: ColorConstants.black,
+            fontSize: 14,
+            fontStyle: FontStyle.italic,
+            fontWeight: FontWeight.bold),
       );
 }
