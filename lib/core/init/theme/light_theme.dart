@@ -34,4 +34,11 @@ class LightTheme extends BaseTheme {
             fontStyle: FontStyle.italic,
             fontWeight: FontWeight.bold),
       );
+
+  @override
+  TextStyle get textFieldHeaderTextStyle => GoogleFonts.ubuntu(
+        fontSize: 12,
+        fontWeight: FontWeight.bold,
+        color: ColorConstants.steelGray,
+      );
 }
