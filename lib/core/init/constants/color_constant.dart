@@ -14,5 +14,12 @@ class ColorConstants {
   static const Color fruitSalad = Color(0xFF4CAF50);
   static const Color blueGray = Color(0xFF607D8B);
   static const Color steelGray = Color(0xFF201E2A);
+  static const Color transparent = Colors.transparent;
+  static const Color mercury = Color(0xffE8E8E8);
+  static const Color casablanca = Color(0xFFF8B23E);
+  static const Color errorColor = Color(0xffFBC670); //Color(0xffbb2d3b);
+  static const Color secondaryColor = Colors.white;
+  static const Color primaryColor = Color(0xffFBC670);
+  static const Color scarpaFlow = Color(0xFF56565C);
 
 }
