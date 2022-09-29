@@ -124,17 +124,34 @@
   
 </table>
 
-# Custom Text Field Updated
+# Custom Text Field
 
 
 <table>
   <tr>
-    <td> Custom Text Field Updated </td>
+    <td> Custom Text Field GIF</td>
+    <td> Custom Text Field PNG</td>
   </tr>
   
   <tr>
     <td><img src="github/gifs/custom_text_field/custom_text_field.gif" width=270 height=480></td>
      <td><img src="github/images/text_field/custom_text_field.png" width=270 height=480></td>
+  </tr>
+  
+</table>
+
+# Info Message Panel
+
+
+<table>
+  <tr>
+    <td>Info Message Panel GIF</td>
+    <td>Info Message Panel PNG</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/info_message_panel/info_message_panel.gif" width=270 height=480></td>
+     <td><img src="github/images/info_message_panel/info_message_panel.png" width=270 height=480></td>
   </tr>
   
 </table>
