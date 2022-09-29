@@ -21,6 +21,32 @@
   
 </table>
 
+# Custom Animated Container
+
+<table>
+  <tr>
+    <td>Custom Animated Container</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/animatedContainer/animatedContainer.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
+
+# Wide Expansion Panel
+
+<table>
+  <tr>
+    <td>Wide Expansion Panel</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/wideExpansionPanel/wideExpansionPanel.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
+
 # Circular Progress
 
 <table>
