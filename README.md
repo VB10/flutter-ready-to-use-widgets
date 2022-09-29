@@ -124,6 +124,21 @@
   
 </table>
 
+# Custom Text Field Updated
+
+
+<table>
+  <tr>
+    <td> Custom Text Field Updated </td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/custom_text_field/custom_text_field.gif" width=270 height=480></td>
+     <td><img src="github/images/text_field/custom_text_field.png" width=270 height=480></td>
+  </tr>
+  
+</table>
+
 # FacePile
 
 <table>
