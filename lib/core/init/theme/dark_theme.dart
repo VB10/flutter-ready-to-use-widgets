@@ -20,7 +20,10 @@ class DarkTheme extends BaseTheme {
 
   @override
   TextStyle get wideExpansionPanelTextStyle => throw UnimplementedError();
-  
+
   @override
   TextStyle get textFieldHeaderTextStyle => throw UnimplementedError();
+
+  @override
+  TextStyle get infoMessagePanelTextStyle => throw UnimplementedError();
 }

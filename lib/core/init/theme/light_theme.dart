@@ -41,4 +41,10 @@ class LightTheme extends BaseTheme {
         fontWeight: FontWeight.bold,
         color: ColorConstants.steelGray,
       );
+      @override
+  TextStyle get infoMessagePanelTextStyle => GoogleFonts.ubuntu(
+        fontSize: 14,
+        fontWeight: FontWeight.w500,
+        color: ColorConstants.scarpaFlow,
+      );
 }

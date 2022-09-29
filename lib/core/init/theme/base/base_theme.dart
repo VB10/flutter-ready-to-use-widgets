@@ -5,4 +5,5 @@ abstract class BaseTheme {
   TextStyle get itemCardWidgetTextStyle;
   TextStyle get wideExpansionPanelTextStyle;
   TextStyle get textFieldHeaderTextStyle;
+  TextStyle get infoMessagePanelTextStyle;
 }
