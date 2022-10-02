@@ -16,5 +16,14 @@ class DarkTheme extends BaseTheme {
   ThemeData get themeData => throw UnimplementedError();
 
   @override
-  TextStyle get customSnackBar => throw UnimplementedError();
+  TextStyle get itemCardWidgetTextStyle => throw UnimplementedError();
+
+  @override
+  TextStyle get wideExpansionPanelTextStyle => throw UnimplementedError();
+
+  @override
+  TextStyle get textFieldHeaderTextStyle => throw UnimplementedError();
+
+  @override
+  TextStyle get infoMessagePanelTextStyle => throw UnimplementedError();
 }
