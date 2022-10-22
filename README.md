@@ -337,3 +337,18 @@
   </tr>
   
 </table>
+
+
+# Custom Side Bar
+<table>
+  <tr>
+    <td>Custom Side Bar</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/images/custom_drawer/home.jpg" width=270 height=480></td>
+    <td><img src="github/images/custom_drawer/drawer.gif" width=270 height=480></td>
+    <td><img src="github/images/custom_drawer/drawer.jpg" width=270 height=480></td>
+  </tr>
+  
+</table>
