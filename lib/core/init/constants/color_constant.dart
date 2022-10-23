@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 // Daha sonra buradaki rengi kullanacağımız widget içine önce bu file import ediyoruz.
 // Import ettikten sonra rengi kullanacağımız satıra gelip 'ColorConstants.white' örneği gibi istediğimiz rengi ekliyoruz. Detaylar Readme.md
 class ColorConstants {
+  ColorConstants._init();
   static const Color black = Color(0xFF000000);
   static const Color white = Color(0xFFffffff);
   static const Color white70 = Color(0xB3FFFFFF);
@@ -21,5 +22,4 @@ class ColorConstants {
   static const Color secondaryColor = Colors.white;
   static const Color primaryColor = Color(0xffFBC670);
   static const Color scarpaFlow = Color(0xFF56565C);
-
 }
