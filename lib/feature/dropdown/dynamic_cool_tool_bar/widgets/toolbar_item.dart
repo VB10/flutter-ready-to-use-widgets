@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 import '../model/toolbar_item_data.dart';
 
 import '../constants/constants.dart';
@@ -43,7 +43,7 @@ class ToolbarItem extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(
                       blurRadius: 10,
-                      color: Colors.black.withOpacity(0.1),
+                      color: ColorConstants.black.withOpacity(0.1),
                     ),
                   ],
                 ),
@@ -71,7 +71,7 @@ class ToolbarItem extends StatelessWidget {
                       curve: Constants.scrollScaleAnimationCurve,
                       child: Icon(
                         toolbarItem.icon,
-                        color: Colors.white,
+                        color: ColorConstants.white,
                       ),
                     ),
                     const SizedBox(width: 12),
@@ -84,7 +84,7 @@ class ToolbarItem extends StatelessWidget {
                           toolbarItem.title,
                           style: const TextStyle(
                             fontSize: 18,
-                            color: Colors.white,
+                            color: ColorConstants.white,
                           ),
                           maxLines: 1,
                         ),

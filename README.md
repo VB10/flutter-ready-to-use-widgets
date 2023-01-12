@@ -21,6 +21,32 @@
   
 </table>
 
+# Custom Animated Container
+
+<table>
+  <tr>
+    <td>Custom Animated Container</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/animatedContainer/animatedContainer.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
+
+# Wide Expansion Panel
+
+<table>
+  <tr>
+    <td>Wide Expansion Panel</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/wideExpansionPanel/wideExpansionPanel.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
+
 # Circular Progress
 
 <table>
@@ -98,6 +124,38 @@
   
 </table>
 
+# Custom Text Field
+
+
+<table>
+  <tr>
+    <td> Custom Text Field GIF</td>
+    <td> Custom Text Field PNG</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/custom_text_field/custom_text_field.gif" width=270 height=480></td>
+     <td><img src="github/images/text_field/custom_text_field.png" width=270 height=480></td>
+  </tr>
+  
+</table>
+
+# Info Message Panel
+
+
+<table>
+  <tr>
+    <td>Info Message Panel GIF</td>
+    <td>Info Message Panel PNG</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/info_message_panel/info_message_panel.gif" width=270 height=480></td>
+     <td><img src="github/images/info_message_panel/info_message_panel.png" width=270 height=480></td>
+  </tr>
+  
+</table>
+
 # FacePile
 
 <table>
@@ -136,6 +194,20 @@
      <td><img src="github/images/group_checkbox/flutter_group_checkbox_properties.png" width=270 height=480></td>
   </tr>
   
+</table>
+
+# Color Constants
+
+<table>
+  <tr>
+    <td><img src="github/images/constants/sc1.png" width=900 height=250></td>
+  </tr>
+  <tr>
+    <td><img src="github/images/constants/sc3.png" width=900 height=100></td>
+  </tr>
+   <tr>
+    <td><img src="github/images/constants/sc2.png" width=900 height=200></td>
+  </tr>
 </table>
 
 
@@ -195,6 +267,7 @@
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
 | WidgetSlider             | [Readme](https://github.com/MehmetKaranlik/flutter-ready-to-use-widgets/blob/master/lib/feature/widget_slider/Readme.md)  | 
 | CSV Chart.               | [Readme](https://github.com/burakJs/flutter-ready-to-use-widgets/blob/master/lib/feature/chart/Readme.md)  | 
+| Cartesian Chart Widget with Pointer| [Readme]((https://github.com/aliaydogdu000/flutter-ready-to-use-widgets/blob/master/lib/feature/chart/cartesian_chart_with_pointer/Readme.md)  | 
 
 
 
@@ -224,11 +297,42 @@ https://user-images.githubusercontent.com/86653103/193681948-5c09388f-08fe-489d-
 | Name                     | Readme                                                                                                    |
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
 | Bottom List Picker                | [Readme](lib/feature/bottomlistpicker/readme.md)  | 
-[Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif) 
+[Gif](github/gifs/bottomlistpicker/bottom_list_picker.gif)
 | Bottom List Picker                | [Readme](github/gifs/bottomlistpicker/bottom_list_picker.gif)  | 
 
 
+# Circle Avatar Image And Alphabet
 
+
+
+<table>
+  <tr>
+    <td> Circle Avatar Image And Alphabet </td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/circle_avatar_image_and_alphabet/circle_avatar_image_and_alphabet.gif" width=270 height=480></td>
+  </tr>
+  
+</table>
+                                                                                      
+ [Readme](lib/feature/circle_avatar_image_and_alphabet/readme.md)
+
+
+
+
+# Rating Bar
+
+
+<table>
+  <tr>
+    <td> Heart Icon Bar </td>
+    <td> Star Icon Bar </td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/gifs/rating_bar/heart_icon.gif" width=270 height=480></td>
+    <td><img src="github/gifs/rating_bar/star_icon.gif" width=270 height=480></td>
 # Stacked Images Widget
 
 <table>
@@ -238,6 +342,21 @@ https://user-images.githubusercontent.com/86653103/193681948-5c09388f-08fe-489d-
   
   <tr>
     <td><img src="github\images\stacked_images\stackedimg.png" width=270 height=480></td>
+  </tr>
+  
+</table>
+
+
+# Custom Side Bar
+<table>
+  <tr>
+    <td>Custom Side Bar</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/images/custom_drawer/home.jpg" width=270 height=480></td>
+    <td><img src="github/images/custom_drawer/drawer.gif" width=270 height=480></td>
+    <td><img src="github/images/custom_drawer/drawer.jpg" width=270 height=480></td>
   </tr>
   
 </table>

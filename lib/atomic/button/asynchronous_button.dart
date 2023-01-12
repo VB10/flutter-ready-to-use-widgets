@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 
 final buttonStyle = ButtonStyle(
-  shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
-  backgroundColor: MaterialStateProperty.all(const Color.fromARGB(255, 229, 78, 118)),
+  shape: MaterialStateProperty.all(
+      RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
+  backgroundColor:
+      MaterialStateProperty.all(const Color.fromARGB(255, 229, 78, 118)),
   minimumSize: MaterialStateProperty.all(const Size(200, 50)),
 );
 
@@ -23,7 +26,6 @@ class AsynchronousButton extends StatefulWidget {
 }
 
 class _AsynchronousButtonState extends State<AsynchronousButton> {
-  
   bool _isButtonBusy = false;
   void _updateButtonState() => setState(() => _isButtonBusy = !_isButtonBusy);
 
@@ -38,7 +40,10 @@ class _AsynchronousButtonState extends State<AsynchronousButton> {
           await widget.onPressed();
           _updateButtonState();
         },
-        child: Center(child: _isButtonBusy ? const _BusyWidget() : _ButtonText(buttonText: widget.buttonText)),
+        child: Center(
+            child: _isButtonBusy
+                ? const _BusyWidget()
+                : _ButtonText(buttonText: widget.buttonText)),
         style: buttonStyle,
       ),
     );
@@ -52,7 +57,7 @@ class _BusyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CircularProgressIndicator(color: Colors.white);
+    return const CircularProgressIndicator(color: ColorConstants.white);
   }
 }
 
@@ -68,7 +73,7 @@ class _ButtonText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       buttonText,
-      style: const TextStyle(color: Colors.white),
+      style: const TextStyle(color: ColorConstants.white),
       textAlign: TextAlign.center,
     );
   }

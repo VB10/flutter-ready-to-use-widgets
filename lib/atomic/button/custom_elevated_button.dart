@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ready_to_use_widgets/core/init/constants/color_constant.dart';
 
 // WIDGET DESCRIPTION
 // It is a widget where you can set your button as you want and make new widgets for your own buttons.
@@ -14,7 +15,13 @@ class CustomElevatedButton extends StatelessWidget {
   final VoidCallback? onPressed;
 
   const CustomElevatedButton(
-      {Key? key, this.color, this.height, this.width, this.borderRadius, this.onPressed, required this.child})
+      {Key? key,
+      this.color,
+      this.height,
+      this.width,
+      this.borderRadius,
+      this.onPressed,
+      required this.child})
       : super(key: key);
 
   @override
@@ -25,7 +32,8 @@ class CustomElevatedButton extends StatelessWidget {
       child: ElevatedButton(
           onPressed: onPressed,
           style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(color ?? Colors.pink),
+            backgroundColor:
+                MaterialStateProperty.all(color ?? ColorConstants.amaranth),
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(borderRadius ?? 2),
