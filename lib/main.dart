@@ -6,8 +6,11 @@ import 'package:ready_to_use_widgets/view/future_navigate.dart';
 import 'package:ready_to_use_widgets/atomic/glow_image/example_glow_image.dart';
 import 'package:ready_to_use_widgets/atomic/rating_bar/extension/rating_bar_icon_extension.dart';
 import 'package:ready_to_use_widgets/atomic/rating_bar/rating_bar.dart';
+import 'atomic/beauty_textfield/beauty_textfield.dart';
 import 'atomic/button/asynchronous_button.dart';
+import 'atomic/custom_animated/example_animated.dart';
 import 'atomic/dropdown/example_custom_dropdown.dart';
+import 'atomic/group_checkbox/example/group_checkbox_example_view.dart';
 import 'atomic/text/animated_cross_text.dart';
 
 import 'feature/network_connection/cubit/network_cubit.dart';
@@ -41,26 +44,13 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  int _counter = 0;
-
-  void _incrementCounter() async {
-    for (var x = 0; x < 10; x++) {
-      await Future.delayed(const Duration(seconds: 1));
-      setState(() {
-        _counter++;
-      });
-    }
-  }
-
   @override
   void initState() {
     super.initState();
-    _incrementCounter();
   }
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        title: 'Material App', home: InfoMessagePanelExample());
+    return const MaterialApp(title: 'Material App', home: CustomAnimated());
   }
 }
