@@ -353,3 +353,15 @@
   </tr>
   
 </table>
+
+# Auth Text Field
+<table>
+  <tr>
+    <td>Auth TextField</td>
+  </tr>
+  
+  <tr>
+    ![auth_textfield](https://user-images.githubusercontent.com/100313333/230120345-c19a0b97-afba-421d-96a4-ae4e2e77d1d6.png)
+  </tr>
+  
+</table>
