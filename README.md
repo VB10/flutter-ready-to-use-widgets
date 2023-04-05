@@ -361,7 +361,7 @@
   </tr>
   
   <tr>
-    resim koyamadım :(
+    <td><img src="github/images/auth_textfield/auth_textfield.png" width=270 height=480></td>
   </tr>
   
 </table>
