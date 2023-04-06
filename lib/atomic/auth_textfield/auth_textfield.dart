@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
+import 'package:ready_to_use_widgets/atomic/auth_textfield/enum/auth_textfield_enum.dart';
+import 'package:ready_to_use_widgets/atomic/auth_textfield/validation/regex_val.dart';
 
 class AuthTextField extends StatefulWidget {
   const AuthTextField({
@@ -11,6 +13,7 @@ class AuthTextField extends StatefulWidget {
     this.prefixIcon,
     this.keyboardType,
     this.isNext,
+    required this.textfieldType,
   }) : super(key: key);
 
   final String? hintText;
@@ -18,6 +21,7 @@ class AuthTextField extends StatefulWidget {
   final IconData? prefixIcon;
   final TextInputType? keyboardType;
   final bool? isNext;
+  final AuthTextfieldTypeEnum textfieldType;
 
   @override
   State<AuthTextField> createState() => _AuthTextFieldState();
@@ -30,7 +34,7 @@ class _AuthTextFieldState extends State<AuthTextField> {
   void initState() {
     super.initState();
     _obscureText =
-        widget.keyboardType == TextInputType.visiblePassword ? true : false;
+        widget.textfieldType == AuthTextfieldTypeEnum.password ? true : false;
   }
 
   @override
@@ -76,11 +80,11 @@ class _AuthTextFieldState extends State<AuthTextField> {
         ),
         validator: (value) {
           if (value == null || value.isEmpty) {
-            return "Bu alan boş bırakılamaz";
+            return _Texts.emptyVal;
           }
-          if (widget.keyboardType == TextInputType.emailAddress) {
-            if (RegExp(r'\S+@\S+\.\S+').hasMatch(value)) {
-              return "Geçerli bir mail adresi giriniz";
+          if (widget.textfieldType == AuthTextfieldTypeEnum.mail) {
+            if (!RegexValidations.instance.emailRegex.hasMatch(value)) {
+              return _Texts.mailValidation;
             }
           }
           return null;
@@ -101,8 +105,13 @@ class _AuthTextFieldState extends State<AuthTextField> {
   }
 
   void _changeVisibility() {
-    return setState(() {
+    setState(() {
       _obscureText = !_obscureText!;
     });
   }
+}
+
+class _Texts {
+  static const String emptyVal = "Bu alan boş bırakılamaz";
+  static const String mailValidation = "Geçerli bir mail adresi giriniz";
 }
