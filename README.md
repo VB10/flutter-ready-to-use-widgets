@@ -360,3 +360,15 @@ https://user-images.githubusercontent.com/86653103/193681948-5c09388f-08fe-489d-
   </tr>
   
 </table>
+
+# Auth Text Field
+<table>
+  <tr>
+    <td>Auth TextField</td>
+  </tr>
+  
+  <tr>
+    <td><img src="github/images/auth_textfield/auth_textfield.png" width=270 height=480></td>
+  </tr>
+  
+</table>

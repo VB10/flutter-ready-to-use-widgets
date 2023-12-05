@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({
-    super.key,
+    Key? key,
     required this.openDrawer,
     required this.isDrawerOpen,
-  });
+  }) : super(key: key);
   final VoidCallback openDrawer;
   final bool isDrawerOpen;
 

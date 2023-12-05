@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_specific_drawer/view/drawer/viewmodel/drawer_view_model.dart';
+import 'package:ready_to_use_widgets/feature/custom_drawer/view/drawer/viewmodel/drawer_view_model.dart';
 
 class DrawerView extends StatelessWidget {
-  DrawerView({super.key, required this.width});
+  DrawerView({Key? key, required this.width}) : super(key: key);
   final double width;
   final viewModel = DrawerViewModel();
 
@@ -16,15 +16,15 @@ class DrawerView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(16.0),
+              const Padding(
+                padding: EdgeInsets.all(16.0),
                 child: Row(
                   children: [
                     Wrap(
                       direction: Axis.vertical,
                       alignment: WrapAlignment.spaceEvenly,
                       spacing: 20,
-                      children: const [
+                      children: [
                         CircleAvatar(child: Icon(Icons.person_outline)),
                         Text("@mysCod3r"),
                       ],
