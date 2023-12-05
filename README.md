@@ -282,6 +282,13 @@
   
 </table>
 
+#Data Table 2 with sorting
+
+
+https://user-images.githubusercontent.com/86653103/193681948-5c09388f-08fe-489d-879a-57b2da99c6e2.mov
+
+
+
                                   
 
 # Bottom List Picker
